@@ -56,7 +56,7 @@ I'm treating this class like a graduate level seminar class.
 
 <img src=img/welcome-to-grad-5b84be.jpg width=300px />
 
-| assignment type   | point value    | number of assignments |
+| assignment type   | point value    | amount                |
 | ----------------- | -------------- | --------------------- |
 | homework          |  1,000,000     | between 1-15?         |
 | final project     | 10,000,000     | 1                     |
