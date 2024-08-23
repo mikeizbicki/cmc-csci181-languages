@@ -1,4 +1,4 @@
-# Topic 0: Basic Software Engineering
+# Topic 0: LLMs and Software Engineering
 
 <img src=img/chatgpt.png width=300px />
 
@@ -6,6 +6,8 @@
 
 1. How to interface with an LLM from python
 1. Understand 2 common security mistakes with LLMs
+    1. key leaking
+    1. prompt injection
 1. Participate in an ongoing CTF security challenge
 
 ## Homework
