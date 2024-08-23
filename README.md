@@ -17,7 +17,7 @@ Material will be posted in the github folder as we cover it.
 
 You should able to code independently and figure out how to use random libraries.
 
-<img src=img/google2.png width=300px />
+<img src=img/google2.webp width=300px />
 <!--
 <img src=img/google.png width=300px />
 
@@ -26,8 +26,7 @@ You should able to code independently and figure out how to use random libraries
 
 The hardest thing for most people will probably be my use of git and the command line.
 
-<img src=img/git1.jpg width=300px />
-<img src=img/terminal1.jpg width=300px />
+<img src=img/git1.jpg width=300px /><img src=img/terminal1.jpg width=300px />
 
 If Google doesn't solve your problems,
 the QCL has lots of people who can help you with these problems.
@@ -40,28 +39,26 @@ The command line stuff might also be new to you.
 
 <!--
 <img src=img/terminal3.jpg width=600px />
--->
 
 Senior programmers have a (well-earned) reputation for being mean to juniors who ask dumb questions.
 
 <img src=img/google2.jpg width=300px />
 
 I promise not to be mean.
+-->
 Please ask random questions about these tools throughout the semester!!!
 
 ## Grading
 
 I'm treating this class like a graduate level seminar class.
 
-<img src=img/welcome-to-grad-5b84be.jpg width=600px />
+<img src=img/welcome-to-grad-5b84be.jpg width=300px />
 
-| ----------------- | -------------- | --------------------- |
 | assignment type   | point value    | number of assignments |
 | ----------------- | -------------- | --------------------- |
 | homework          | 01,000,000     | between 1-15?         |
 | final project     | 10,000,000     | 1                     |
 | exam              | 0              | 0                     |
-| ----------------- | -------------- | --------------------- |
 
 Final project overview:
 1. Do something cool vaguely related to what we talk about in class.
@@ -77,7 +74,7 @@ Your reward will be that I will respect you.
 Do whatever you want if it helps you learn.
 But be an adult and don't do anything stupid.
 
-<img src=img/Collaboration.avif width=600px />
+<img src=img/Collaboration.avif width=300px />
 
 ## Accommodations
 
