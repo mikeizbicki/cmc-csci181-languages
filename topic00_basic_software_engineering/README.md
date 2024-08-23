@@ -64,7 +64,7 @@ Create a file `docsum.py` that:
 
 Useful links:
 1. <https://docs.python.org/3/library/argparse.html>
-1. <>
+1. <https://github.com/btimby/fulltext>
 
 Create a `README.md` file that:
 1. explains what your `docsum.py` file does
