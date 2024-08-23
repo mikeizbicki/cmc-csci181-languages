@@ -1,6 +1,6 @@
 # Topic 0: Basic Software Engineering
 
-<img src=img/chatgpt.png width=600px />
+<img src=img/chatgpt.png width=300px />
 
 **Learning objectives:**
 
@@ -17,32 +17,30 @@ I will do most of the steps in class, and you get to follow along.
 ### Step 0: Background Stuff
 
 Create an account and API key at <https://groq.com/>.
-
-Groq is a pre-revenue LLM startup: <https://www.youtube.com/watch?v=BzAdXyPYKQo>
+Groq is a [pre-revenue LLM startup](https://www.youtube.com/watch?v=BzAdXyPYKQo) focused on developing faster hardware to compete with NVIDIA.
 
 ### Step 1: Creating a project
 
 The following steps walk through the standard way to start a new python project.
 You should develop the habit of going through these steps on all the work you do.
+
+Create a new project folder called `docsum`.
 ```
-$ mkdir groq_app
-$ cd groq_app
+$ mkdir docsum
+$ cd docsum
 $ git init
 ```
 
-Create a python virtual environment for packages
+Create a python virtual environment for packages.
 ```
 $ python3 -m venv venv
 $ . ./venv/bin/activate
 $ echo venv > .gitignore
 ```
 
-Install packages
+Install packages.
 ```
 $ pip3 install groq
-```
-
-```
 $ pip3 freeze > requirements.txt
 $ git add requirements.txt
 $ git commit -m 'create requirements file'
@@ -52,14 +50,17 @@ $ git commit -m 'create requirements file'
 
 The groq API has a basic usage example here: <https://github.com/groq/groq-python#usage>
 
-Groq is also fully compatible with the openai api: <https://console.groq.com/docs/openai>
+Groq is also compatible with the openai api: <https://console.groq.com/docs/openai>
 
 ### Step 3: Create the Document Summarizer
 
 Create a file `docsum.py` that:
 1. takes a file as a command line argument
-    1. the file should be of "any type"
 1. summarizes that file using the Groq API
+
+Useful links:
+1. <https://docs.python.org/3/library/argparse.html>
+1. <>
 
 Create a `README.md` file that:
 1. explains what your `docsum.py` file does
@@ -73,9 +74,9 @@ Submit the link to your github repo on sakai.
 
 ### Mistake 1: Leaking API keys
 
-<img src=img/apikey.jpg width=600px />
+<img src=img/apikey.jpg width=300px />
 
-<img src=img/api2.webp width=600px />
+<img src=img/api2.webp width=300px />
 
 Very common support request on the OpenAI forums:
 1. <https://community.openai.com/t/key-leaked-unexpectedly-any-possible-reason/280948>
@@ -101,8 +102,16 @@ Read the following links:
 
 ## Capture the Flag
 
-1. CTFs:
-    1. <https://invariantlabs.ai/play-ctf-challenge-24>
+<img src=img/ctf.png width=300px />
+
+Try to solve the CTF at: <https://invariantlabs.ai/ctf-challenge-24>.
+You should be able to solve at least the "playground" level.
+
+> **NOTE:**
+> This is a real, currently active, CTF challenge.
+> It started in August 5th and runs until September 2nd.
+
+<!--
     1. <https://verse.systems/blog/post/2024-03-19-a-ctf-challenge-for-llms-for-code-analysis/>
     1. <https://github.com/dhammon/ai-goat>
-
+-->
