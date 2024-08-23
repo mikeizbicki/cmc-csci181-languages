@@ -83,9 +83,7 @@ Submit the link to your github repo on sakai.
 
 ### Mistake 1: Leaking API keys
 
-<img src=img/apikey.jpg width=300px />
-
-<img src=img/api2.webp width=300px />
+<img src=img/apikey.jpg width=300px /> <img src=img/api2.webp width=300px />
 
 Very common support request on the OpenAI forums:
 1. <https://community.openai.com/t/key-leaked-unexpectedly-any-possible-reason/280948>
