@@ -1,0 +1,108 @@
+# Topic 0: Basic Software Engineering
+
+<img src=img/chatgpt.png width=600px />
+
+**Learning objectives:**
+
+1. How to interface with an LLM from python
+1. Understand 2 common security mistakes with LLMs
+1. Participate in an ongoing CTF security challenge
+
+## Homework
+
+We will write a simple program to summarize an input document.
+
+I will do most of the steps in class, and you get to follow along.
+
+### Step 0: Background Stuff
+
+Create an account and API key at <https://groq.com/>.
+
+Groq is a pre-revenue LLM startup: <https://www.youtube.com/watch?v=BzAdXyPYKQo>
+
+### Step 1: Creating a project
+
+The following steps walk through the standard way to start a new python project.
+You should develop the habit of going through these steps on all the work you do.
+```
+$ mkdir groq_app
+$ cd groq_app
+$ git init
+```
+
+Create a python virtual environment for packages
+```
+$ python3 -m venv venv
+$ . ./venv/bin/activate
+$ echo venv > .gitignore
+```
+
+Install packages
+```
+$ pip3 install groq
+```
+
+```
+$ pip3 freeze > requirements.txt
+$ git add requirements.txt
+$ git commit -m 'create requirements file'
+```
+
+### Step 2: Get a Basic Example working
+
+The groq API has a basic usage example here: <https://github.com/groq/groq-python#usage>
+
+Groq is also fully compatible with the openai api: <https://console.groq.com/docs/openai>
+
+### Step 3: Create the Document Summarizer
+
+Create a file `docsum.py` that:
+1. takes a file as a command line argument
+    1. the file should be of "any type"
+1. summarizes that file using the Groq API
+
+Create a `README.md` file that:
+1. explains what your `docsum.py` file does
+1. how to use it
+
+Create a new github project for your repo.  Commit and upload all of your changes.
+
+Submit the link to your github repo on sakai.
+
+## Stupid Mistakes "Engineers" Make With LLMs
+
+### Mistake 1: Leaking API keys
+
+<img src=img/apikey.jpg width=600px />
+
+<img src=img/api2.webp width=600px />
+
+Very common support request on the OpenAI forums:
+1. <https://community.openai.com/t/key-leaked-unexpectedly-any-possible-reason/280948>
+1. <https://community.openai.com/t/my-api-is-getting-leaked-need-advice/280564>
+1. <https://community.openai.com/t/api-key-stolen-charged-lost-of-anybody-help-me/390240>
+1. <https://community.openai.com/t/someone-used-my-api-key-and-used-up-all-my-limit/774218>
+
+Tools for stealing API keys:
+1. <https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks>
+
+### Stupid Mistake 2: Trusting User Input
+
+<img src=img/prompt.png width=600px />
+
+Read the following links:
+1. Prompt injection attacks against ChatGPT 3: <https://simonwillison.net/2022/Sep/12/prompt-injection/>
+1. Data Exfiltration from Slack AI via indirect prompt injection <https://promptarmor.substack.com/p/data-exfiltration-from-slack-ai-via>
+   
+   and the corresponding hacker news post <https://news.ycombinator.com/item?id=41302597>
+
+   > **NOTE:**
+   > This attack was announced 20 August 2024.
+
+## Capture the Flag
+
+1. CTFs:
+    1. <https://invariantlabs.ai/play-ctf-challenge-24>
+    1. <https://verse.systems/blog/post/2024-03-19-a-ctf-challenge-for-llms-for-code-analysis/>
+    1. <https://github.com/dhammon/ai-goat>
+

@@ -1,52 +1,76 @@
 # CSCI181: Languages and Computing
 
-**Overview:**
+## About the class
 
-In this class we'll explore some of the fundamental limits of generative AI like ChatGPT.
-We'll use tools from a branch of math called "formal language theory".
-Specifically we'll study the limits of "regular languages" and "context free languages" and apply these tools to both natural languages (like English) and programming languages (like Python).
+<img src=img/syllabus.png width=600px />
 
-The course will be about half programming and half math.
+This class will cover stuff I think is fun about language.  For example:
+1. various tricks/pitfalls for programming with LLMs,
+1. formal language semantics (e.g. regular vs context free languages), and
+1. differences between computer languages and natural languages.
 
-Prereqs: Data Structures
+Material will be posted in the github folder as we cover it.
+1. I'll adjust the topics on-the-fly depending on what's "hot".
+1. If you have anything that you'd like us to cover, let me know.
 
-**Some possible coding assignments:**
+## Required background
 
-1. Implement your own programming language
-1. Write an AI model that speaks the "language" of games like chess or mario
-1. llama.cpp/whisper.cpp constraining the grammar
+You should able to code independently and figure out how to use random libraries.
 
-**Some possible topics:**
+<img src=img/google2.jpg width=600px />
 
-Most machine learning courses only cover the PAC learning paradigm (think train/test split with positive/negative examples).
-You can prove that certain types of languages cannot be learned in this paradigm, and that other paradigms are needed.
-Examples include
+<img src=img/google.png width=600px />
 
-1. Efficient Exact Learning (Passive vs Active)
-1. Language Identification in the Limit
+<img src=img/google.webp width=600px />
 
-We'll cover some combination of the following topics related to formal languages:
+<img src=img/google.jpg width=600px />
 
-1. Equivalence of:
-    1. DFA
-    1. NFA
-    1. Regular Expressions
-    1. (Finite) Semigroups
-1. Equivalence of:
-    1. Context Free Languages
-    1. Pushdown Automata
-1. Chomsky Hierarchy
-    1. DPDA vs DCFG
-    1. Ambiguous CFG
-    1. Parsing, LR(k) grammars
-    1. Chomsky–Schützenberger representation theorem
-1. Weighted Automata
-    1. Hidden Markov Models
-    1. Kalman Filter
-    1. POMDPs
-    1. Reinforcement Learning
+The hardest thing for most people will probably be my use of git everywhere.
 
-We definitely will not cover:
-1. Writing prompts
-1. RAG
-1. Compute-heavy LLM techniques
+<img src=img/git1.jpg width=600px />
+
+<img src=img/git2.jpg width=600px />
+
+The command line stuff might also be new to you.
+
+<img src=img/terminal1.jpg width=600px />
+
+<img src=img/terminal2.jpg width=600px />
+
+<img src=img/terminal3.jpg width=600px />
+
+Please ask random questions about these tools throughout the semester!!!
+
+## Grading
+
+I'm treating this class like a graduate level seminar class.
+
+<img src=img/welcome-to-grad-5b84be.jpg width=600px />
+
+| ----------------- | -------------- | --------------------- |
+| assignment type   | point value    | number of assignments |
+| ----------------- | -------------- | --------------------- |
+| homework          | 01,000,000     | between 1-15?         |
+| final project     | 10,000,000     | 1                     |
+| exam              | 0              | 0                     |
+| ----------------- | -------------- | --------------------- |
+
+Final project overview:
+1. Do something cool vaguely related to what we talk about in class.
+1. Create a github repo that explains your project.
+1. Present it to me in person during finals week.
+
+If you see a mistake in this repo anywhere,
+please submit a pull request.
+Your reward will be that I will respect you.
+
+## Collaboration Policy
+
+Do whatever you want if it helps you learn.
+But be an adult and don't do anything stupid.
+
+<img src=img/Collaboration.avif width=600px />
+
+## Accommodations
+
+Just let me know whatever you need and I'll work with you to make it happen.
