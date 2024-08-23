@@ -2,7 +2,7 @@
 
 ## About the class
 
-<img src=img/syllabus.png width=300px />
+<img src=img/syllabus.png width=400px />
 
 This class will cover stuff I think is fun about language.
 For example:
