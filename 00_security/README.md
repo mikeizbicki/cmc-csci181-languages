@@ -42,8 +42,12 @@ Install packages.
 ```
 $ pip3 install groq
 $ pip3 freeze > requirements.txt
-$ git add requirements.txt
-$ git commit -m 'create requirements file'
+```
+
+Commit to git.
+```
+$ git add .
+$ git commit -m 'init'
 ```
 
 ### Step 2: Get a Basic Example working
