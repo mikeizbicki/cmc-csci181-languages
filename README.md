@@ -26,7 +26,7 @@ You should able to code independently and figure out how to use random libraries
 
 The hardest thing for most people will probably be my use of git and the command line.
 
-<img src=img/git1.jpg height=300px /> <img src=img/terminal1.jpg height=300px />
+<img src=img/git1.jpg height=230px /> <img src=img/terminal1.jpg height=230px />
 
 If Google doesn't solve your problems,
 the QCL has lots of people who can help you with these problems.
