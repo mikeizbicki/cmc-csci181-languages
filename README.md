@@ -2,11 +2,12 @@
 
 ## About the class
 
-<img src=img/syllabus.png width=600px />
+<img src=img/syllabus.png width=300px />
 
-This class will cover stuff I think is fun about language.  For example:
+This class will cover stuff I think is fun about language.
+For example:
 1. various tricks/pitfalls for programming with LLMs,
-1. formal language semantics (e.g. regular vs context free languages), and
+1. how formal language theory (e.g. regular vs context free languages) influences are understanding of LLMs, and
 1. differences between computer languages and natural languages.
 
 Material will be posted in the github folder as we cover it.
@@ -28,8 +29,9 @@ The hardest thing for most people will probably be my use of git and the command
 
 <img src=img/git1.jpg height=230px /> <img src=img/terminal1.jpg height=230px />
 
-If Google doesn't solve your problems,
-the QCL has lots of people who can help you with these problems.
+If you're not familiar with these tools:
+1. You might find the [CS46 unix/git tutorial](https://github.com/mikeizbicki/cmc-csci046/blob/2023spring/topic_00_unix/git.md) helpful.
+1. The QCL has lots of people who are familiar and can help you.
 
 <!--
 <img src=img/git2.jpg width=300px />
@@ -45,8 +47,8 @@ Senior programmers have a (well-earned) reputation for being mean to juniors who
 <img src=img/google2.jpg width=300px />
 
 I promise not to be mean.
--->
 Please ask random questions about these tools throughout the semester!!!
+-->
 
 ## Grading
 
@@ -56,7 +58,7 @@ I'm treating this class like a graduate level seminar class.
 
 | assignment type   | point value    | number of assignments |
 | ----------------- | -------------- | --------------------- |
-| homework          | 01,000,000     | between 1-15?         |
+| homework          |  1,000,000     | between 1-15?         |
 | final project     | 10,000,000     | 1                     |
 | exam              | 0              | 0                     |
 
