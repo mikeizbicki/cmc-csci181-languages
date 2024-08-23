@@ -50,7 +50,7 @@ $ git add .
 $ git commit -m 'init'
 ```
 
-### Step 2: Get a Basic Example working
+### Step 2: Get a Basic Example Working
 
 The groq API has a basic usage example here: <https://github.com/groq/groq-python#usage>
 
@@ -59,12 +59,15 @@ Groq is also compatible with the openai api: <https://console.groq.com/docs/open
 ### Step 3: Create the Document Summarizer
 
 Create a file `docsum.py` that:
-1. takes a file as a command line argument
+1. takes a file (of any type) as a command line argument
 1. summarizes that file using the Groq API
 
-Useful links:
-1. <https://docs.python.org/3/library/argparse.html>
-1. <https://github.com/btimby/fulltext>
+> **Useful links:**
+>
+> 1. <https://docs.python.org/3/library/argparse.html>
+> 1. <https://github.com/btimby/fulltext>
+>
+> <img src=img/google.jpg width=300px />
 
 Create a `README.md` file that:
 1. explains what your `docsum.py` file does

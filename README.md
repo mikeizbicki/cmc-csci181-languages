@@ -17,28 +17,36 @@ Material will be posted in the github folder as we cover it.
 
 You should able to code independently and figure out how to use random libraries.
 
-<img src=img/google2.jpg width=600px />
-
-<img src=img/google.png width=600px />
+<img src=img/google2.png width=300px />
+<!--
+<img src=img/google.png width=300px />
 
 <img src=img/google.webp width=600px />
+-->
 
-<img src=img/google.jpg width=600px />
+The hardest thing for most people will probably be my use of git and the command line.
 
-The hardest thing for most people will probably be my use of git everywhere.
+<img src=img/git1.jpg width=300px />
+<img src=img/terminal1.jpg width=300px />
 
-<img src=img/git1.jpg width=600px />
+If Google doesn't solve your problems,
+the QCL has lots of people who can help you with these problems.
 
-<img src=img/git2.jpg width=600px />
-
+<!--
+<img src=img/git2.jpg width=300px />
 The command line stuff might also be new to you.
+<img src=img/terminal2.jpg width=300px />
+-->
 
-<img src=img/terminal1.jpg width=600px />
-
-<img src=img/terminal2.jpg width=600px />
-
+<!--
 <img src=img/terminal3.jpg width=600px />
+-->
 
+Senior programmers have a (well-earned) reputation for being mean to juniors who ask dumb questions.
+
+<img src=img/google2.jpg width=300px />
+
+I promise not to be mean.
 Please ask random questions about these tools throughout the semester!!!
 
 ## Grading
