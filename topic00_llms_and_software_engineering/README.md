@@ -71,9 +71,10 @@ Create a file `docsum.py` that:
 >
 > <img src=img/google.jpg width=300px />
 
-Create a `README.md` file that:
-1. explains what your `docsum.py` file does
-1. how to use it
+Create a `README.md` file.
+1. The file should explain what your `docsum.py` file does and how to use it.
+1. The file should use reasonable markdown styling.
+    (Especially with code blocks vs inline code.)
 
 Create a new github project for your repo.  Commit and upload all of your changes.
 
