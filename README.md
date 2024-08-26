@@ -14,6 +14,9 @@ Material will be posted in the github folder as we cover it.
 1. I'll adjust the topics on-the-fly depending on what's "hot".
 1. If you have anything that you'd like us to cover, let me know.
 
+> **NOTE:**
+> This course is NOT <https://github.com/mikeizbicki/cmc-csci181-deeplearning>.
+
 ## Required background
 
 You should able to code independently and figure out how to use random libraries.
