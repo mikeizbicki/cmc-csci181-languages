@@ -1,5 +1,26 @@
 # CSCI181: Languages and Computing
 
+## About the Instructor
+
+|||
+|-|-|
+| Name          | Mike Izbicki (call me Mike) |
+| Email         | mizbicki@cmc.edu |
+| Office        | Adams 216 |
+| Office Hours  | TBA |
+| Zoom          | See [Issue #1](https://github.com/mikeizbicki/cmc-csci181-languages/issues/1) |
+| Webpage       | <https://izbicki.me> |
+| Research      | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
+
+Fun facts:
+1. grew up in San Clemente (~1 hr south of Claremont)
+1. 7 years in the navy
+    1. nuclear submarine officer, personally converted >10g of uranium into pure energy
+    1. worked at National Security Agency (NSA)
+    1. left Navy as a [conscientious objector](https://www.nytimes.com/2011/02/23/nyregion/23objector.html)
+1. phd/postdoc at UC Riverside
+1. taught in [DPRK](https://pust.co)
+
 ## About the class
 
 <img src=img/syllabus.png width=400px />
@@ -14,10 +35,18 @@ Material will be posted in the github folder as we cover it.
 1. I'll adjust the topics on-the-fly depending on what's "hot".
 1. If you have anything that you'd like us to cover, let me know.
 
-> **NOTE:**
-> This course is NOT <https://github.com/mikeizbicki/cmc-csci181-deeplearning>.
+> **Note:**
+> This course is not <https://github.com/mikeizbicki/cmc-csci181-deeplearning>.
 
-## Required background
+### Class Communication
+
+We will be using github issues for all in-class communication.
+    
+1. Press the "watch" button at the top of this repo to ensure that you get emailed as new issues are created.
+
+1. If you have class-related questions, you should post an issue and not email me.
+
+### Required background
 
 You should able to code independently and figure out how to use random libraries.
 
@@ -53,7 +82,7 @@ I promise not to be mean.
 Please ask random questions about these tools throughout the semester!!!
 -->
 
-## Grading
+### Grading
 
 I'm treating this class like a graduate level seminar class.
 
@@ -74,13 +103,13 @@ If you see a mistake in this repo anywhere,
 please submit a pull request.
 Your reward will be that I will respect you.
 
-## Collaboration Policy
+### Collaboration Policy
 
 Do whatever you want if it helps you learn.
 But be an adult and don't do anything stupid.
 
 <img src=img/Collaboration.avif width=300px />
 
-## Accommodations
+### Accommodations
 
 Just let me know whatever you need and I'll work with you to make it happen.
