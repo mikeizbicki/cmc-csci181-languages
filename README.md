@@ -1,5 +1,7 @@
 # CSCI181: Languages and Computing
 
+<img src=img/llm-maximalism_meme.jpg width=400px />
+
 ## About the Instructor
 
 |||
@@ -24,6 +26,8 @@ Fun facts:
 ## About the class
 
 <img src=img/syllabus.png width=400px />
+
+### What We'll Cover
 
 This class will cover stuff I think is fun about language.
 For example:
@@ -112,4 +116,4 @@ But be an adult and don't do anything stupid.
 
 ### Accommodations
 
-Just let me know whatever you need and I'll work with you to make it happen.
+Just let me know what you need and I'll make it happen.
