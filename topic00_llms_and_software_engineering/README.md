@@ -112,12 +112,15 @@ Read the following links:
 
 <img src=img/ctf.png width=300px />
 
-Try to solve the CTF at: <https://invariantlabs.ai/ctf-challenge-24>.
+Solve as much as you can of the CTF at <https://invariantlabs.ai/ctf-challenge-24>.
 You should be able to solve at least the "playground" level.
 
 > **NOTE:**
 > This is a real, currently active, CTF challenge.
 > It started in August 5th and runs until September 2nd.
+
+> **NOTE:**
+> There is no grade attached to this assignment.
 
 <!--
     1. <https://verse.systems/blog/post/2024-03-19-a-ctf-challenge-for-llms-for-code-analysis/>
