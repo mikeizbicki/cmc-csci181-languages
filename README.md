@@ -66,8 +66,8 @@ I'm treating this class like a graduate level seminar class.
 | exam              | 0              | 0                     |
 
 Final project overview:
-1. Do something cool vaguely related to what we talk about in class.
-1. Create a github repo that explains your project.
+1. Do something cool loosely related to what we talk about in class.
+1. Put it in a github repo.
 1. Present it to me in person during finals week.
 
 If you see a mistake in this repo anywhere,
