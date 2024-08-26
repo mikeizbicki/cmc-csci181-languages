@@ -79,7 +79,7 @@ Create a new github project for your repo.  Commit and upload all of your change
 
 Submit the link to your github repo on sakai.
 
-## Stupid Mistakes "Engineers" Make With LLMs
+## Stupid Mistakes Programmers Make With LLMs
 
 ### Mistake 1: Leaking API keys
 
