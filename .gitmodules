@@ -1,0 +1,3 @@
+[submodule "topic00_llms_and_software_engineering/docsum"]
+	path = topic00_llms_and_software_engineering/docsum
+	url = https://github.com/mikeizbicki/docsum
