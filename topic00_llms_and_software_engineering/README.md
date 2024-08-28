@@ -95,6 +95,8 @@ Very common support request on the OpenAI forums:
 Tools for stealing API keys:
 1. <https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/API%20Key%20Leaks>
 
+To secure API keys for github actions, see: <https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions>
+
 ### Stupid Mistake 2: Trusting User Input
 
 <img src=img/prompt.png width=600px />
