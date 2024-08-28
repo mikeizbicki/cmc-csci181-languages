@@ -75,6 +75,8 @@ Create a `README.md` file.
 1. The file should explain what your `docsum.py` file does and how to use it.
 1. The file should use reasonable markdown styling.
     (Especially with code blocks vs inline code.)
+1. The file should contain a badge indicating that github actions ran and passed the test cases.
+    (The test cases are up to you, but should be reasonable.)
 
 Create a new github project for your repo.  Commit and upload all of your changes.
 
