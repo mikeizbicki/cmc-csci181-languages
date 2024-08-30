@@ -7,9 +7,9 @@
 |||
 |-|-|
 | Name          | Mike Izbicki (call me Mike) |
-| Email         | mizbicki@cmc.edu |
+| Email         | ~~mizbicki@cmc.edu~~ You should probably contact me through Github Issues |
 | Office        | Adams 216 |
-| Office Hours  | TBA |
+| Office Hours  | See [Issue #6](https://github.com/mikeizbicki/cmc-csci181-languages/issues/6) |
 | Zoom          | See [Issue #1](https://github.com/mikeizbicki/cmc-csci181-languages/issues/1) |
 | Webpage       | <https://izbicki.me> |
 | Research      | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
