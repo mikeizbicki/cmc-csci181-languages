@@ -88,15 +88,15 @@ Submit the link to your github repo on sakai.
 >
 > 1. Using github actions with LLMs for continuous integration.
 >    
->   This is harder than normal due to the API keys.
+>    This is harder than normal due to the API keys.
 >
 > 1. Writing good test cases for programs with LLMs.
 >
->   Again, harder than normal due to the random nature of LLMs.
+>    Again, harder than normal due to the random nature of LLMs.
 >
 > 1. How to effectively use LLMs to help you write your own code.
 >
->   Focus on test cases!!!
+>    Focus on test cases!!!
 >
 > 1. Handling documents that are "too large" for the LLM via *recursive summarization*.
 >
