@@ -82,6 +82,22 @@ Create a new github project for your repo.  Commit and upload all of your change
 
 Submit the link to your github repo on sakai.
 
+> **NOTE:** (Wednesday, 4 Sep 2024)
+>
+> Today in class, we will cover:
+>
+> 1. using continuous integration with LLMs (via github actions),
+>
+> 1. writing good test cases for programs with LLMs, and
+>
+> 1. handling documents that are "too large" for the LLM via summarization.
+>
+>    > The next topic will cover *retrieval augmented generation* (RAG),
+>    > which is an alternative technique for working with large documents / document collections.
+>
+> Several of you have already submitted the assignment in sakai.
+> You will need to update your assignment to include the material we cover today in class.
+
 ## Stupid Mistakes Programmers Make With LLMs
 
 ### Mistake 1: Leaking API keys
