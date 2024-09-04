@@ -94,6 +94,10 @@ Submit the link to your github repo on sakai.
 >
 >   Again, harder than normal due to the random nature of LLMs.
 >
+> 1. How to effectively use LLMs to help you write your own code.
+>
+>   Focus on test cases!!!
+>
 > 1. Handling documents that are "too large" for the LLM via *recursive summarization*.
 >
 >    The next topic will cover *retrieval augmented generation* (RAG),
