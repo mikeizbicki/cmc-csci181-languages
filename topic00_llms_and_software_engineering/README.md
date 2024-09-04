@@ -86,18 +86,32 @@ Submit the link to your github repo on sakai.
 >
 > Today in class, we will cover:
 >
-> 1. using continuous integration with LLMs (via github actions),
+> 1. Using github actions with LLMs for continuous integration.
+>    
+>   This is harder than normal due to the API keys.
 >
-> 1. writing good test cases for programs with LLMs, and
+> 1. Writing good test cases for programs with LLMs.
 >
-> 1. handling documents that are "too large" for the LLM via *recursive summarization*.
+>   Again, harder than normal due to the random nature of LLMs.
 >
->    > **NOTE:**
->    > The next topic will cover *retrieval augmented generation* (RAG),
->    > which is an alternative technique for working with large documents / document collections.
+> 1. Handling documents that are "too large" for the LLM via *recursive summarization*.
+>
+>    The next topic will cover *retrieval augmented generation* (RAG),
+>    which is an alternative technique for working with large documents / document collections.
+>
+> 1. Handling rate limits.
+>
+> All future assignments will be incorporating all of this material,
+> since this is what I consider to be a requirement for a "minimal viable git repo".
 >
 > Several of you have already submitted the assignment in sakai.
 > You will need to update your assignment to include the material we cover today in class.
+>
+> Assignment "nominally" due this Sunday@midnight.
+> If you can't complete it by then:
+>
+>   1. no points off
+>   1. but you're behind, and we should chat about how to catch up
 
 ## Stupid Mistakes Programmers Make With LLMs
 
