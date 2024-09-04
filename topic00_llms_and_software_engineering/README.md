@@ -90,8 +90,9 @@ Submit the link to your github repo on sakai.
 >
 > 1. writing good test cases for programs with LLMs, and
 >
-> 1. handling documents that are "too large" for the LLM via summarization.
+> 1. handling documents that are "too large" for the LLM via *recursive summarization*.
 >
+>    > **NOTE:**
 >    > The next topic will cover *retrieval augmented generation* (RAG),
 >    > which is an alternative technique for working with large documents / document collections.
 >
