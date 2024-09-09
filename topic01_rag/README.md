@@ -13,8 +13,9 @@
 
 **Homework 0:**
 
-1. FIXME
-1. Hard deadline this Tuesday.
+1. 11/18 submissions.
+1. I'll look at them later today and provide feedback.
+1. Hard deadline this Tuesday.  Lose 100,000 points (1 letter grade) for each day late.
 
 **Overview of RAG:**
 
@@ -58,6 +59,8 @@ One of the reasons Anthropic decided to do this is that it is "trivial" to extra
 1. OpenAI: <https://x.com/dylan522p/status/1755086111397863777?t=bpvmx9OcT-OcxJdFwy64Dg>
 
 ## Homework
+
+**Due date:** Next Sunday (15 Sep) at midnight
 
 <img width=400px src=img/rag.jpg />
 
