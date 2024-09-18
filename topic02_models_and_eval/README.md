@@ -199,5 +199,5 @@ Update your ragnews project by:
 
 1. Submit a link to the branch of your github repo to sakai
 
-**Due:** Sunday 29 September :)
+**Due:** Sunday 22 September
 
