@@ -60,8 +60,6 @@ One of the reasons Anthropic decided to do this is that it is "trivial" to extra
 
 ## Homework
 
-**Due date:** Next Sunday (15 Sep) at midnight
-
 <img width=400px src=img/rag.jpg />
 
 In your next homework, you will build a question and answer system for asking questions about the US presidential election.
@@ -194,3 +192,6 @@ Both postgres and sqlite3 can perform vector searches.
     1. Example usage.
 
 1. Submit the completed project link to sakai.
+
+**Due date:** Next Sunday (15 Sep) at midnight
+
