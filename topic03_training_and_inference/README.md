@@ -2,12 +2,17 @@
 
 <img width=400px src=img/magic.webp />
 
-**Review (engineering):**
+**Review (of engineering concepts):**
 1. Don't disclose API keys
 1. Prompt Engineering
     1. Prompt Injection
 1. Retrieval Augmented Generation
-1. Evaluate your Models
+    1. Focus the LLM on "new" data
+    1. Cheaper/faster than finetuning
+1. Tests
+    1. Separate your LLM code from non-LLM code as much as possible
+    1. Doctests on non-LLM code
+    1. Run benchmarks (that you've created) on LLM code
 
 **News:**
 
