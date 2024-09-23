@@ -251,9 +251,13 @@ Compare to cryptocurrency mining:
 
 1. Greedy Search
 
+    Always pick the most probable next word.
+
     <img width=400px src=img/nextword.jpg />
 
 1. Top Sampling
+
+    Randomly sample from the probability distribution of next words.
 
     1. Temperature of 0 is greedy search.
         Higher temperature is more random.
@@ -269,8 +273,8 @@ Compare to cryptocurrency mining:
     1. <https://huggingface.co/blog/constrained-beam-search>
     1. Very slow on non-local models
     1. Groq:
-        1. [Groq does not support the primitives needed for arbitary constraints](https://console.groq.com/docs/openai#currently-unsupported-openai-features)
-        1. "JSON" mode uses 
+        1. [Groq does not support the primitives needed for arbitary constraints on your own machine](https://console.groq.com/docs/openai#currently-unsupported-openai-features)
+        1. "JSON" mode uses this internally
     1. Language Model Query Language (LMQL) <https://lmql.ai/>
 
 <!--
