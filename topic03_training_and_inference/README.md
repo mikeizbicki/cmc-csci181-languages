@@ -199,7 +199,11 @@ Philosophical debate over whether teacher forcing is sufficient continues to be 
 
 1. Has Sam Altman gone full Gary Marcus? <https://garymarcus.substack.com/p/has-sam-altman-gone-full-gary-marcus>
 
+Tweets from OpenAI:
+
 <img width=600px src=img/parrot-sama.png />
+
+<img width=600px src=img/ngo-tweet.webp />
 
 <!--
 <img width=600px src=img/lecun.png />
