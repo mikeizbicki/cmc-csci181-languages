@@ -275,8 +275,6 @@ Compare to cryptocurrency mining:
     1. Groq:
         1. [Groq does not support the primitives needed for arbitary constraints on your own machine](https://console.groq.com/docs/openai#currently-unsupported-openai-features)
         1. "JSON" mode uses this internally
-    1. Language Model Query Language (LMQL) <https://lmql.ai/>
-
 <!--
 **The popular conception of "LLM as stochastic parrot" is 100% wrong!!!**
 
@@ -301,3 +299,17 @@ We don't.
 
 <img width=400px src=img/converge3.jpeg />
 -->
+
+### Libraries
+
+Things I think are boring:
+1. LangChain <https://python.langchain.com/docs/introduction/>
+1. DSpy <https://github.com/stanfordnlp/dspy>
+1. Ragas <https://docs.ragas.io/en/stable/>
+
+Things I think are cool:
+1. Language Model Query Language (LMQL)
+    1. "SQL for LLMs"
+    1. PLDI 2023 <https://arxiv.org/abs/2212.06094>
+    1. Documentation <https://lmql.ai/>
+
