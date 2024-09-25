@@ -280,8 +280,8 @@ Compare to cryptocurrency mining:
     1. Advantages:
         1. Allow the model to look multiple tokens ahead when performing its inference
     1. Disadvantages:
-        1. Very slow on non-local models
-        1. Very expensive ($$$)
+        1. Slow on non-local models
+        1. Expensive ($$$) on non-local models
         1. No streaming support
     1. Details: <https://huggingface.co/blog/constrained-beam-search>
     1. Groq:
