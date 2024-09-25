@@ -139,7 +139,7 @@ The standard method for training **generative** language models is **teacher for
 
             <https://huyenchip.com/2023/05/02/rlhf.html>
 
-            Andrej Karpathy: ["RLFH is barely RL"](https://x.com/karpathy/status/1821277264996352246)
+            Andrej Karpathy: ["RLHF is barely RL"](https://x.com/karpathy/status/1821277264996352246)
 
     1. The standard picture for describing this pipeline is the [Shoggoth](https://en.wikipedia.org/wiki/Shoggoth):
 
