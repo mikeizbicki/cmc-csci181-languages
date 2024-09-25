@@ -35,7 +35,7 @@ Have enough background on LLM training and inference to read easy research paper
 **Homework:**
 
 1. Read [The Pitfalls of Next Token Prediction](https://arxiv.org/abs/2403.06963) (ICML 2024)
-    1. We will discuss the paper next Monday (30 Oct)
+    1. We will discuss the paper next Monday (30 Sep)
         1. No class recording
         1. Please be present and on time
     1. Spend 2-5 hours on the paper
