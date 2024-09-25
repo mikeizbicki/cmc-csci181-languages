@@ -264,6 +264,8 @@ Compare to cryptocurrency mining:
 
         1. Common values are: 0 (no sampling), 0.8, 1
 
+        1. Doesn't need much tuning on SOTA models
+
     1. Two methods of eliminating "obviously bad" samples.
         1. Top-k
 
