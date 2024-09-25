@@ -262,19 +262,35 @@ Compare to cryptocurrency mining:
     1. Temperature of 0 is greedy search.
         Higher temperature is more random.
 
-    1. Two methods of sampling:
+        1. Common values are: 0 (no sampling), 0.8, 1
+
+    1. Two methods of eliminating "obviously bad" samples.
         1. Top-k
-        1. Top-P / Nucleus Sampling
+
+            Common values are k=10,100,1000
+            
+        1. Top-P (also called Nucleus Sampling)
+            
+            Common values are P=0.5 or 1 (to disable)
     
             (ICLR 2020) <https://arxiv.org/abs/1904.09751>
 
 1. (constrained) Beam search
 
-    1. <https://huggingface.co/blog/constrained-beam-search>
-    1. Very slow on non-local models
+    1. Advantages:
+        1. Allow the model to look multiple tokens ahead when performing its inference
+    1. Disadvantages:
+        1. Very slow on non-local models
+        1. No streaming support
+    1. Details: <https://huggingface.co/blog/constrained-beam-search>
     1. Groq:
         1. [Groq does not support the primitives needed for arbitary constraints on your own machine](https://console.groq.com/docs/openai#currently-unsupported-openai-features)
-        1. "JSON" mode uses this internally
+        1. "JSON" mode uses constrained sampling this internally
+
+            Not published in their documentation,
+            but it's the only "reasonable" way to implement this feature.
+
+            The lack of streaming support 
 <!--
 **The popular conception of "LLM as stochastic parrot" is 100% wrong!!!**
 
