@@ -35,7 +35,7 @@ Have enough background on LLM training and inference to read easy research paper
 **Homework:**
 
 1. Read [The Pitfalls of Next Token Prediction](https://arxiv.org/abs/2403.06963) (ICML 2024)
-    1. We will discuss the paper next Monday (30 Oct)
+    1. We will discuss the paper next Monday (30 Sep)
         1. No class recording
         1. Please be present and on time
     1. Spend 2-5 hours on the paper
@@ -139,7 +139,7 @@ The standard method for training **generative** language models is **teacher for
 
             <https://huyenchip.com/2023/05/02/rlhf.html>
 
-            Andrej Karpathy: ["RLFH is barely RL"](https://x.com/karpathy/status/1821277264996352246)
+            Andrej Karpathy: ["RLHF is barely RL"](https://x.com/karpathy/status/1821277264996352246)
 
     1. The standard picture for describing this pipeline is the [Shoggoth](https://en.wikipedia.org/wiki/Shoggoth):
 
