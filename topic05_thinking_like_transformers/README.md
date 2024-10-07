@@ -31,7 +31,7 @@ We will use RASP to understand what transformers are capable of.
 1. Place lower/upper bounds on their compute capabilities.
 
     For example:
-    1. Transformers will never play "perfect chess".
+    1. Transformers will never play "perfect NxN chess".
     1. Certain transformers can sort data,
         others cannot.
 
