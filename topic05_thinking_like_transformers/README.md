@@ -184,6 +184,7 @@ Element-wise operations can change the types of the s-ops.
 ```
 indices < 3;
 tokens == indices;
+```
 
 > **GOTCHA:**
 > ```
