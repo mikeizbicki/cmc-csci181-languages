@@ -202,11 +202,16 @@ round(indices / 2);          # convert float to int
 ### Basic control flow
 
 RASP is not a *procedural* programming language.
+1. It includes if statements, functions, and for loops.
+1. But these do not affect the "control flow" through the program like you are used to.
 
 `if` statements are ternary operations applied elementwise.
 ```
 -1 if indices > 1 else 1;
 ```
+> **GOTCHA:**
+> You cannot use an if statement to execute some code but not other code.
+> All "branches" of the if statement are evaluated.
 
 The `def` keyword can be used to define functions.
 The standard library defines the following `min` and `max` functions.
@@ -233,6 +238,11 @@ Therefore, functions cannot be used to implement complex control flow.
 ### Complex control flow
 
 Complex control flow is implemented using the `select` and `aggregate` operations.
+
+1. There is no analog to the functions in other languages like python.
+1. Not all programs can be written using thesee functions.
+1. If you understand the limits of these functions,
+    then you understand the limits of what a transformer can do.
 
 The `select` command constructs a boolean matrix from two inputs s-ops and a comparison operation.
 
