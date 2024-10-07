@@ -83,8 +83,16 @@ For the homework:
 
 ### Primitive Sequence Operations
 
-A *sequence operations* (s-ops) converts an input sequence into an output sequence.
-In RASP, there are two primitive s-ops: `tokens` and `indices`.
+A *sequence operation* (s-op) converts an input sequence of length $n$ into an output sequence of length $n$.
+The length cannot be changed.
+
+<!--
+1. All sequences in RASP are length $n$ and the length cannot be changed.
+1. All RASP programs are written without knowledge of the input sequence length.
+    They can be run on sequences of any arbitrary size $n$.
+-->
+
+There are two primitive s-ops: `tokens` and `indices`.
 These s-ops represent the input information into a transformer.
 They can be called similar to functions in python.
 ```
