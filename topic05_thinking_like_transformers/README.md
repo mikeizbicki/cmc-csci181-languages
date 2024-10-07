@@ -187,7 +187,6 @@ tokens == indices;
 ```
 
 > **GOTCHA:**
-> ```
 > You can get confusing error messages if your types do not align.
 > ```
 > set example "hello"
