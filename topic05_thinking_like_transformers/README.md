@@ -373,8 +373,8 @@ draw(reverse_func(indices));
 
 Three more simple examples from the standard library:
 ```
-def average(a) {
-    return aggregate(full_s,a);
+def average(seq) {
+    return aggregate(full_s, seq);
 }
 
 def load_from_location(seq,location) {
@@ -385,6 +385,20 @@ def contains(seq,atom) {
 	return aggregate(full_s,indicator(seq==atom))>0;
 }
 ```
+
+> **Challenge:**
+> Write a "running average" function.
+> That is, the function will return the average of every element in the sequence "seen so far".
+> For example:
+> ```
+> > running_average(indices)("hello");
+> [0, 0.5, 1.0, 1.5, 2.0]
+> > running_average(indices*2)("hello");
+> [0, 1.0, 2.0, 3.0, 4.0]
+> > running_average(indices^2)("hello");
+> [0, 0.5, 1.667, 3.5, 6.0]
+> ```
+> Notice that I've slightly simplified the output notation to focus on the "important parts" of the output.
 
 One of the most important functions in the standard library is `selector_width`.
 ```
@@ -569,7 +583,6 @@ For example:
 > howmany(tokens, "l")("hello")
 "00122"
 ```
-
 
 <!--
 def sop_max(seq) {
