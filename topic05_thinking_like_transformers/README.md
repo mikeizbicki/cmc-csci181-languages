@@ -403,7 +403,23 @@ def load_from_location(seq,location) {
 > ```
 > Notice that I've slightly simplified the output notation to focus on the "important parts" of the output.
 
-One of the most important functions in the standard library is `selector_width`.
+### BOS vs no BOS
+
+The BOS is a "beginning of sequence" token.
+It surprisingly affects the power of a transformer.
+
+One of the simplest tasks the paper computes is the "histogram" task.
+That is, for each input symbol, compute the number of times the symbol occurs.
+For example:
+```
+> hist_nobos("hello")
+[1, 1, 2, 2, 1]
+> hist_bos("$hello")
+[0, 1, 1, 2, 2, 1]
+```
+
+Adding the BOS token greatly simplifies implementation.
+Without BOS:
 ```
 def selector_width(sel) {
     at0 = select(indices,0,==);
@@ -414,25 +430,34 @@ def selector_width(sel) {
     valat0 = aggregate(sAND0,1,0);
     return round(except0 + valat0);
 }
+
+hist_nobos = selector_width(select(tokens_str,tokens_str,==));
 ```
 
-Sorting is a standard task that many other tasks reduce to.
-The following code implmements an insertion-sort-like $O(n^2)$ sorting algorithm.
+With BOS:
 ```
-def sort(seq) {
-	select_earlier_in_sorted = 
-		select(seq,seq,<) or (select(seq,seq,==) and select(indices,indices,<));
-	target_position = 
-		selector_width(select_earlier_in_sorted);
-	select_new_val = 
-		select(target_position,indices,==);
-	return aggregate(select_new_val,seq);
+def _with_bos_selector_width(s) {
+	s = s or select(indices,0,==);
+	return round((1/aggregate(s,indicator(indices==0))))-1;
 }
+
+hist_bos = _with_bos_selector_width( select(tokens_str,tokens_str,==)); 
 ```
+
+Many empirical results have shown that adding a BOS token improves transformer performance.
+The RASP example above explains why:
+The learning process can learn a much simpler algorithm.
+
+> **GOTCHA:**
+> The code in the paper does not work :(
+>
+> The code in the repo does work :)
 
 ### Types of Attention
 
-What we're using:
+What RASP uses:
+
+1. (2017 NeurIPS - Google Brain) Attention Is All You Need <https://arxiv.org/abs/1706.03762>
 
 1. (2019 NAACL - Google AI Language) BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding <https://arxiv.org/abs/1810.04805>
 
@@ -448,16 +473,16 @@ Autogenerative:
     mask_ag = select(indices, indices, <=);
     ```
 
-    The Llama 1/2/3 series of models all use this token mask.
+    > **NOTE:**
+    > Compare the average implementation to the running average implementation.
 
-    Most propietary SOTA architectures "probably" use this mask.
+    1. Often called "dense masking" / "dense transformers" in the LLM literature.
 
-    Anthropic combines this mask with a sparse mask below.
+    1. The Llama 1/2/3 series of models all use this token mask.
 
-<!--
-> **Fun Facts:**
-> 1. Autogenerative transformers cannot implement sorting.
--->
+    1. Most propietary SOTA architectures "probably" use this mask.
+
+    1. Anthropic combines this mask with a sparse mask below.
 
 Sparse Architectures:
 
@@ -474,9 +499,33 @@ Sparse Architectures:
 
     longformer mask + more stuff
 
+### Sorting
+
+Sorting is a standard task that many other tasks reduce to.
+The following code implmements an insertion-sort-like $O(n^2)$ sorting algorithm.
+```
+def sort(seq) {
+	select_earlier_in_sorted = 
+		select(seq,seq,<) or (select(seq,seq,==) and select(indices,indices,<));
+	target_position = 
+		selector_width(select_earlier_in_sorted);
+	select_new_val = 
+		select(target_position,indices,==);
+	return aggregate(select_new_val,seq);
+}
+```
+
+> **Fact:**
+> Sorting cannot be done "autogeneratively" with exactly $2n$ tokens.
+
+> **Fact:**
+> Duplicating the input prompt in the output allows sorting to be done "autogeneratively".
+> It can be computed using $3n$ tokens.
+
 > **Open Problem:**
 > Can merge sort (or any $n\log n$ runtime sorting algorithm) be implemented in a transformer with sparse attention?
-
+>
+> You have solved this problem if you can implement any $n\log n$ sorting algorithm where all selectors (i.e. results of `select` function) have the `mask_ag` applied to them.
 
 ## Homework
 
