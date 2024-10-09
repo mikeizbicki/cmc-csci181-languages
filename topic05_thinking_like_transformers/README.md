@@ -377,13 +377,14 @@ def average(seq) {
     return aggregate(full_s, seq);
 }
 
+def contains(seq,atom) {
+    return aggregate(full_s,indicator(seq==atom))>0;
+}
+
 def load_from_location(seq,location) {
     return aggregate(select(indices,location,==),seq);
 }
 
-def contains(seq,atom) {
-	return aggregate(full_s,indicator(seq==atom))>0;
-}
 ```
 
 > **Challenge:**
@@ -397,6 +398,8 @@ def contains(seq,atom) {
 > [0, 1.0, 2.0, 3.0, 4.0]
 > > running_average(indices^2)("hello");
 > [0, 0.5, 1.667, 3.5, 6.0]
+> > running_average(indices^2)("hello world");
+> [0, 0.5, 1.667, 3.5, 6.0, 9.167, 13.0, 17.5, 22.667, 28.5, 35.0]
 > ```
 > Notice that I've slightly simplified the output notation to focus on the "important parts" of the output.
 
