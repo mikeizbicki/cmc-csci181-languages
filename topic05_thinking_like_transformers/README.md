@@ -522,8 +522,15 @@ def sort(seq) {
 > Duplicating the input prompt in the output allows sorting to be done "autogeneratively".
 > It can be computed using $3n$ tokens.
 
+> **Fact:**
+> Finite depth sparse attention transformers (either LongFormer of BigBird) cannot sort their input.
+> Why?
+> 1. Their number of comparison operations is $\Theta(dkn)$ where $d$ is the depth and $k$ the measure of sparsity (e.g. window width in the LongFormer)
+> 1. Sorting requires $\Omega(n\log n)$ comparisons.
+
 > **Open Problem:**
-> Can merge sort (or any $n\log n$ runtime sorting algorithm) be implemented in a transformer with sparse attention?
+> If we let $k$ or $d$ depend on the size of the transformer (e.g. $d = Theta(\log n)$), 
+> can merge sort (or any $n\log n$ runtime sorting algorithm) be implemented in a transformer with sparse attention?
 >
 > You have solved this problem if you can implement any $n\log n$ sorting algorithm where all selectors (i.e. results of `select` function) have the `mask_ag` applied to them.
 
