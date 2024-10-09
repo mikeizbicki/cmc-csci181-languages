@@ -347,7 +347,8 @@ reverse = aggregate(select(indices, length-indices-1, ==), tokens);
 > If we wanted that functionality, we would need to define a reverse function:
 > ```
 > def reverse_func(seq) {
->     return aggregate(select(indices, length-indices-1, ==), seq);> }
+>     return aggregate(select(indices, length-indices-1, ==), seq);
+> }
 > ```
 > this would allow reversing any s-op:
 > ```
@@ -361,11 +362,11 @@ reverse = aggregate(select(indices, length-indices-1, ==), tokens);
 
 We can use the `draw` function to visualize the full control flow of an s-op.
 ```
-> draw(length);
-> draw(length_lastloc);
-> draw(reverse);
-> draw(reverse_func(tokens));
-> draw(reverse_func(indices));
+draw(length);
+draw(length_lastloc);
+draw(reverse);
+draw(reverse_func(tokens));
+draw(reverse_func(indices));
 ```
 
 ### Examples from the standard library
@@ -398,6 +399,8 @@ def selector_width(sel) {
 }
 ```
 
+Sorting is a standard task that many other tasks reduce to.
+The following code implmements an insertion-sort-like $O(n^2)$ sorting algorithm.
 ```
 def sort(seq) {
 	select_earlier_in_sorted = 
@@ -410,38 +413,165 @@ def sort(seq) {
 }
 ```
 
+### Types of Attention
+
+What we're using:
+
+1. (2019 NAACL - Google AI Language) BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding <https://arxiv.org/abs/1810.04805>
+
+    ```
+    mask_full = select(1, 1, ==);
+    ```
+
+Autogenerative:
+
+1. No citation.
+
+    ```
+    mask_ag = select(indices, indices, <=);
+    ```
+
+    The Llama 1/2/3 series of models all use this token mask.
+
+    Most propietary SOTA architectures "probably" use this mask.
+
+    Anthropic combines this mask with a sparse mask below.
+
 <!--
-def block_i(bsize) {
-    return round(indices/bsize - 0.49999999);
-}
+> **Fun Facts:**
+> 1. Autogenerative transformers cannot implement sorting.
+-->
 
-def block_t(bsize) {
-    return block_s(bsize*2) and not block_s(bsize);
-}
+Sparse Architectures:
 
-def block_s(bsize) {
-    return select(block_i(bsize), block_i(bsize), ==);
-}
+1. (2020 ??? - Allen Institute for AI) Longformer: The Long-Document Transformer
+    ```
+    def mask_longformer(wsize) {
+        gt = select(indices, indices-wsize, >=);
+        lt = select(indices, indices+wsize, <=);
+        return gt and lt;
+    }
+    ```
 
-def merge(seq, bsize) {
-}
+1. (2020 NeurIPS - Google Research) BigBird: Transformers for Longer Sequences <https://arxiv.org/abs/2007.14062>
 
-def blocksort(seq, bsize) {
-	select_earlier_in_sorted = 
-		select(seq,seq,<) or (select(seq,seq,==) and select(indices,indices,<));
-	select_earlier_in_sorted = select_earlier_in_sorted and block_s(bsize);
+    longformer mask + more stuff
 
-	target_position = selector_width(select_earlier_in_sorted);
-    target_position = target_position + block_i(bsize)*bsize;
-	select_new_val = select(target_position,indices,==);
-	return aggregate(select_new_val,seq);
-}
+> **Open Problem:**
+> Can merge sort (or any $n\log n$ runtime sorting algorithm) be implemented in a transformer with sparse attention?
 
-def select_longformer_eq(query, key, wsize) {
-    mask = select(indices, indices-wsize, >=) and select(indices, indices+wsize, <=);
-    return mask and select(query, key, ==);
-}
 
+## Homework
+
+These problems are in no particular order.
+Many of them are closely inspired by functions in the standard library.
+
+Expect more problems posted after fall break.
+
+**Problem 1:**
+Write an s-op that contains the indices in reverse order.
+For example:
+```
+> reverse_indices("hello")
+[4, 3, 2, 1, 0]
+```
+
+**Problem 2:**
+Write a function that "rotates" the input text by the specified number of characters.
+For example:
+```
+> rotate(tokens, 0)("hello")
+"hello"
+> rotate(tokens, 1)("hello")
+"ohell"
+> rotate(tokens, 2)("hello")
+"lohel"
+```
+
+**Problem 3:**
+Write a function that "rotates" the input text by the specified number of characters.
+For example:
+```
+> rotate(tokens, 0)("hello")
+"hello"
+> rotate(tokens, 1)("hello")
+"ohell"
+> rotate(tokens, 2)("hello")
+"lohel"
+```
+
+**Problem 3:**
+Write a function that takes a sequence as input and "swaps every letter with its neighbor".
+Specifically, for every even index $i$, positions $i$ and $i+1$ will be swapped.
+For example:
+```
+> swap(tokens)("hello")
+"ehllo"
+> swap(tokens)("ababab")
+"bababa"
+```
+
+**Problem 4:**
+Write a function that returns the maximum value in the sequence repeated for every position.
+For example:
+```
+> maxseq(tokens)("ababcabab")
+"ccccccccc"
+```
+
+**Problem 5:**
+Write a function that returns the maximum value in the sequnce only of the tokens seen so far.
+For example:
+```
+> maxseq(tokens)("ababcabab")
+"abbbccccc"
+```
+
+**Problem 6:**
+Write a function that performs sequence reversal "autogeneratively".
+That is, it will take a sequence as input, and the sequence will contain a special token `$` that marks the "end of the prompt".
+The text before the `$` should be unchanged, and the text after the `$` should be the text before the `$` reversed (this text represents the model's response to the prompt).
+The code should be robuse to the case when the length of text after `$` is not the same as the length of text before `$`.
+For example:
+```
+> reverse_ag(tokens)("hello$     ")
+"hello$olleh"
+> reverse_ag(tokens)("hello$ ")
+"hello$o"
+> reverse_ag(tokens)("hello$X")
+"hello$o"
+> reverse_ag(tokens)("hello$XXXXXXXXXX")
+"hello$olleh     "
+```
+
+**Problem 6:**
+Write a function that counts the number of times a certain token appears in the input sequence.
+For example:
+```
+> howmany(tokens, "a")("hello")
+"00000"
+> howmany(tokens, "h")("hello")
+"11111"
+> howmany(tokens, "l")("hello")
+"22222"
+```
+
+**Problem 7:**
+Write a function that counts the number of times a certain token has appeared in the input sequence so far.
+For example:
+```
+> howmany(tokens, "a")("hello")
+"00000"
+> howmany(tokens, "h")("hello")
+"11111"
+> howmany(tokens, "e")("hello")
+"01111"
+> howmany(tokens, "l")("hello")
+"00122"
+```
+
+
+<!--
 def sop_max(seq) {
     le = select(tokens, tokens, <=);
     selector_width(le) == length;
