@@ -643,6 +643,16 @@ For example:
 "00122"
 ```
 
+**Submission:**
+
+1. Create a new github repo.
+
+1. In the README file, list the problem prompt and your solution.
+
+    (Please provide reasonable markdown formatting.)
+
+1. Submit the link to your repo to sakai.
+
 <!--
 def sop_max(seq) {
     le = select(tokens, tokens, <=);
