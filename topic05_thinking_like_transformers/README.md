@@ -523,7 +523,8 @@ def sort(seq) {
 
 > **Fact:**
 > Duplicating the input prompt in the output allows sorting to be done "autogeneratively".
-> It can be computed using $3n$ tokens.
+> It can be computed using $3n$ tokens by repeating the initial prompt.
+> This explains the success of the re-reading (RE2) prompting strategy <https://arxiv.org/abs/2309.06275>.
 
 > **Fact:**
 > Finite depth sparse attention transformers (either LongFormer or BigBird) cannot sort their input.
