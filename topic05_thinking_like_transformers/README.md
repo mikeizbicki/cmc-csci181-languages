@@ -529,7 +529,7 @@ def sort(seq) {
 > 1. Sorting requires $\Omega(n\log n)$ comparisons.
 
 > **Open Problem:**
-> If we let $k$ or $d$ depend on the size of the transformer (e.g. $d = Theta(\log n)$), 
+> If we let $k$ or $d$ depend on the size of the transformer (e.g. $d = \Theta(\log n)$), 
 > can merge sort (or any $n\log n$ runtime sorting algorithm) be implemented in a transformer with sparse attention?
 >
 > You have solved this problem if you can implement any $n\log n$ sorting algorithm where all selectors (i.e. results of `select` function) have the `mask_ag` applied to them.
