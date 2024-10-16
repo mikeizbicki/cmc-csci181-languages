@@ -437,8 +437,8 @@ hist_nobos = selector_width(select(tokens_str,tokens_str,==));
 With BOS:
 ```
 def _with_bos_selector_width(s) {
-	s = s or select(indices,0,==);
-	return round((1/aggregate(s,indicator(indices==0))))-1;
+    s = s or select(indices,0,==);
+    return round((1/aggregate(s,indicator(indices==0))))-1;
 }
 
 hist_bos = _with_bos_selector_width( select(tokens_str,tokens_str,==)); 
@@ -505,13 +505,13 @@ Sorting is a standard task that many other tasks reduce to.
 The following code implmements an insertion-sort-like $O(n^2)$ sorting algorithm.
 ```
 def sort(seq) {
-	select_earlier_in_sorted = 
-		select(seq,seq,<) or (select(seq,seq,==) and select(indices,indices,<));
-	target_position = 
-		selector_width(select_earlier_in_sorted);
-	select_new_val = 
-		select(target_position,indices,==);
-	return aggregate(select_new_val,seq);
+    select_earlier_in_sorted = 
+        select(seq,seq,<) or (select(seq,seq,==) and select(indices,indices,<));
+    target_position = 
+        selector_width(select_earlier_in_sorted);
+    select_new_val = 
+        select(target_position,indices,==);
+    return aggregate(select_new_val,seq);
 }
 ```
 
@@ -532,7 +532,7 @@ def sort(seq) {
 > If we let $k$ or $d$ depend on the size of the transformer (e.g. $d = \Theta(\log n)$), 
 > can merge sort (or any $n\log n$ runtime sorting algorithm) be implemented in a transformer with sparse attention?
 >
-> You have solved this problem if you can implement any $n\log n$ sorting algorithm where all selectors (i.e. results of `select` function) have the `mask_ag` applied to them.
+> You have solved this problem if you can implement any $n\log n$ sorting algorithm where all selectors (i.e. results of `select` function) have the `mask_ag` and `mask_longformer` applied to them.
 
 ## Homework
 
