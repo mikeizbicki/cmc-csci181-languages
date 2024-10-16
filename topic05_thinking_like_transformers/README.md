@@ -446,7 +446,7 @@ hist_bos = _with_bos_selector_width( select(tokens_str,tokens_str,==));
 
 Many empirical results have shown that adding a BOS token improves transformer performance.
 The RASP example above explains why:
-The learning process can learn a much simpler algorithm.
+The learning process can learn a simpler algorithm.
 
 > **GOTCHA:**
 > The code in the paper does not work :(
@@ -529,7 +529,7 @@ def sort(seq) {
 > 1. Sorting requires $\Omega(n\log n)$ comparisons.
 
 > **Open Problem:**
-> If we let $k$ or $d$ depend on the size of the transformer (e.g. $d = \Theta(\log n)$), 
+> If we let $k$ or $d$ depend on the size of the transformer---for example set $d = \Theta(\log n)$ or $k = \Theta(\log n)$--- 
 > can merge sort (or any $n\log n$ runtime sorting algorithm) be implemented in a transformer with sparse attention?
 >
 > You have solved this problem if you can implement any $n\log n$ sorting algorithm where all selectors (i.e. results of `select` function) have the `mask_ag` and `mask_longformer` applied to them.
