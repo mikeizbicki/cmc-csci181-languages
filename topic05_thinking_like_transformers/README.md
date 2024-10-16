@@ -453,6 +453,12 @@ The learning process can learn a simpler algorithm.
 >
 > The code in the repo does work :)
 
+> **NOTE:**
+> OpenAI introduced the chat completions API in part so that users wouldn't have to think about "low level" details like the BOS token.
+> OpenAI doesn't provide the full details of their setup,
+> but it is reasonable to assume that they are adding a BOS token "behind the scenes" to improve performance.
+> Trying to explicitly add a BOS token in your system prompt will not improve performance.
+
 ### Types of Attention
 
 What RASP uses:
