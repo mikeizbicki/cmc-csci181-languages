@@ -502,7 +502,7 @@ Sparse Architectures:
 ### Sorting
 
 Sorting is a standard task that many other tasks reduce to.
-The following code implmements an insertion-sort-like $O(n^2)$ sorting algorithm.
+The following code implements an insertion-sort-like $O(n^2)$ sorting algorithm.
 ```
 def sort(seq) {
     select_earlier_in_sorted = 
@@ -516,14 +516,17 @@ def sort(seq) {
 ```
 
 > **Fact:**
-> Sorting cannot be done "autogeneratively" with exactly $2n$ tokens.
+> Sorting cannot be done "autogeneratively" with exactly $2n$ tokens if the number of transformer heads is fixed.
+>
+> If we let the number of transformer heads grow as $\Theta(n)$,
+> then sorting can be done autogeneratively with exactly $2n$ tokens.
 
 > **Fact:**
 > Duplicating the input prompt in the output allows sorting to be done "autogeneratively".
 > It can be computed using $3n$ tokens.
 
 > **Fact:**
-> Finite depth sparse attention transformers (either LongFormer of BigBird) cannot sort their input.
+> Finite depth sparse attention transformers (either LongFormer or BigBird) cannot sort their input.
 > Why?
 > 1. Their number of comparison operations is $\Theta(dkn)$ where $d$ is the depth and $k$ the measure of sparsity (e.g. window width in the LongFormer)
 > 1. Sorting requires $\Omega(n\log n)$ comparisons.
@@ -533,6 +536,28 @@ def sort(seq) {
 > can merge sort (or any $n\log n$ runtime sorting algorithm) be implemented in a transformer with sparse attention?
 >
 > You have solved this problem if you can implement any $n\log n$ sorting algorithm where all selectors (i.e. results of `select` function) have the `mask_ag` and `mask_longformer` applied to them.
+
+### General Implications
+
+**Fact:**
+Transformers can only implement algorithms with runtime $O(n^2)$.
+
+Example problems that cannot be solved:
+
+1. Any NP-hard problem <https://en.wikipedia.org/wiki/NP-completeness>
+
+1. "generalized n x n chess"
+   
+   It is EXPTIME-complete <https://www.sciencedirect.com/science/article/pii/0097316581900169>
+
+1. Matrix multiplication has runtime lower bound $\Omega(n^2 \log n)$
+
+**Fact:**
+Not all algorithms with runtime $O(n^2)$ can be implemented in a transformer.
+(We only have $n^2$ comparison operations available; not $n^2$ arbitrary operations.)
+
+**Fact:**
+Sparse transformers can only implement algorithms with $O(n)$ runtime.
 
 ## Homework
 
@@ -562,20 +587,9 @@ For example:
 ```
 
 **Problem 3:**
-Write a function that "rotates" the input text by the specified number of characters.
-For example:
-```
-> rotate(tokens, 0)("hello")
-"hello"
-> rotate(tokens, 1)("hello")
-"ohell"
-> rotate(tokens, 2)("hello")
-"lohel"
-```
-
-**Problem 3:**
 Write a function that takes a sequence as input and "swaps every letter with its neighbor".
-Specifically, for every even index $i$, positions $i$ and $i+1$ will be swapped.
+Specifically, for every even index $i$, positions $i$ and $i+1$ will be swapped;
+if the length of the sequence is odd, then the last element should not move.
 For example:
 ```
 > swap(tokens)("hello")
@@ -599,6 +613,9 @@ For example:
 > maxseq(tokens)("ababcabab")
 "abbbccccc"
 ```
+
+> *Hint:*
+> The `mask_ag` selector is useful for any problem that is either "autogenerative" or using only tokens "seen so far".
 
 **Problem 6:**
 Write a function that performs sequence reversal "autogeneratively".
@@ -643,6 +660,10 @@ For example:
 "00122"
 ```
 
+**Problem 8:**
+Create your own "interesting" problem statement.
+Write a function/s-op that solves this problem.
+
 **Submission:**
 
 1. Create a new github repo.
@@ -652,38 +673,3 @@ For example:
     (Please provide reasonable markdown formatting.)
 
 1. Submit the link to your repo to sakai.
-
-<!--
-def sop_max(seq) {
-    le = select(tokens, tokens, <=);
-    selector_width(le) == length;
-}
-
-def swap_neighbors(seq) {
-    return aggregate((select(seq, seq, <) or select(seq, seq, >)) and block_s(2), seq);
-}
-
-def seqmax(seq) {
-    maxloc = selector_width(select(seq, seq, <=)) == length;
-    return aggregate(select(indicator(maxloc), 1, ==), seq);
-}
-
-## Implications
-
-
-Transformers can only implement algorithms with runtime $O(kn^2)$
-
-Many problems cannot be solved:
-
-1. Any NP-hard problem <https://en.wikipedia.org/wiki/NP-completeness>
-
-1. "generalized n x n chess"
-   
-   it is EXPTIME-complete <https://www.sciencedirect.com/science/article/pii/0097316581900169>
-
-1. matrix multiplication has runtime lower bound $\Omega(n^2 \log n)$
-
-## Autogenerative
-
-Sorting cannot be implmemented autogeneratively
--->
