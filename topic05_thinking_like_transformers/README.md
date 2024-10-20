@@ -613,13 +613,14 @@ For example:
 "ccccccccc"
 ```
 
-**Problem 5:**
+~~**Problem 5:**
 Write a function that returns the maximum value in the sequnce only of the tokens seen so far.
 For example:
 ```
 > maxseq(tokens)("ababcabab")
 "abbbccccc"
 ```
+~~
 
 > *Hint:*
 > The `mask_ag` selector is useful for any problem that is either "autogenerative" or using only tokens "seen so far".
