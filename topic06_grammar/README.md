@@ -143,7 +143,9 @@ Use whisper.cpp to create a "personal assistant" app.
 
     where `things` can be any of `humans`, `animals`, `lifeforms`, or `robots`
 
-    You might (or might not) find the guide for writing grammars helpful: <https://github.com/ggerganov/llama.cpp/blob/master/grammars/README.md>
+    > **HINT:**
+    > We will discuss the details of how to write grammars when we cover the next homework below.
+    > You might also find the llama.cpp guide for writing grammars helpful: <https://github.com/ggerganov/llama.cpp/blob/master/grammars/README.md>
 
 1. Run `command` with your modified grammar, verifying that you can now issue commands like `kill all humans` and the command is registered.
 
