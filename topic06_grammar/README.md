@@ -79,7 +79,7 @@ Use whisper.cpp to create a "personal assistant" app.
 
             for his story, see: <https://www.reddit.com/r/LocalLLaMA/comments/1cf6b4y/what_is_the_story_behind_ggeranov_llamacpp/>
 
-            <img src=img/ggeranov.png width=400px />
+            <img src=img/ggeranov.png width=300px />
 
 1. llama.cpp is (I think) the first LLM library to support restricting output to a *context free grammar* (CFG)
 
