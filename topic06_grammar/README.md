@@ -85,6 +85,10 @@ Use whisper.cpp to create a "personal assistant" app.
 
     1. a handful of other libraries began with regex restrictions
 
+    1. 2023-02-24: Meta releases llama model weights <https://www.reddit.com/r/LocalLLaMA/comments/1dpjcju/timeline_of_llama_family_of_models_first/>
+
+    1. 2023-03-10: llama.cpp first commit <https://github.com/ggerganov/llama.cpp/commits/master/?since=2023-03-10&until=2023-03-10>
+
     1. 2023-05-10: llama.cpp regex pr <https://github.com/ggerganov/llama.cpp/pull/1397>
 
     1. 2023-06-08: llama.cpp cfg pr <https://github.com/ggerganov/llama.cpp/pull/1773>
@@ -101,7 +105,9 @@ Use whisper.cpp to create a "personal assistant" app.
 
             but he still gets "most of the credit" for fostering an environment where people want to contribute these features
     
-    1. whisper.cpp cfg pr (easy since it shares code base with llama.cpp) <https://github.com/ggerganov/whisper.cpp/pull/1229>
+    1. 2023-08-30: whisper.cpp cfg pr (easy since it shares code base with llama.cpp) <https://github.com/ggerganov/whisper.cpp/pull/1229>
+
+        AFAIK, no other service offers similar capabilities for ASR
 
 1. Chess is a cool example of why we should care.
 
