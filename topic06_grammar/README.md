@@ -125,7 +125,7 @@ Use whisper.cpp to create a "personal assistant" app.
 
 1. Build the `command` program in whisper.cpp
 
-    <https://github.com/ggerganov/whisper.cpp/tree/master/examples/command>
+    Instructions are at the bottom of the README: <https://github.com/ggerganov/whisper.cpp/tree/master/examples/command>
 
 1. Run `command` with the assistant grammar
 
@@ -149,9 +149,9 @@ Use whisper.cpp to create a "personal assistant" app.
 
 1. Upload a video of you issuing your new commands to sakai.
 
-## Homework 2
+## Homework 2-4
 
-Details TBA
+**tl;dr** You will implement a series of increasingly more complex programming languages.
 
 **Background:** See `example*.py`
 
