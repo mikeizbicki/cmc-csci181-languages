@@ -151,11 +151,15 @@ Use whisper.cpp to create a "personal assistant" app.
 
 1. Upload a video of you issuing your new commands to sakai.
 
-## Homework 2-4
+## Other Homeworks
 
 **tl;dr** You will implement a series of increasingly more complex programming languages.
 
-**Background:** See `example*.py`
+**Background:**
+
+1. See `example*.py`.
+
+Other details TBA.
 
 <!--
 ## Part 0: What is Language?
