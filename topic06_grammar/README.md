@@ -1,5 +1,7 @@
 # Grammar
 
+<img src=img/meme.webp width=300px />
+
 **Announcements (Monday 21 Oct):**
 
 1. 6/14 homeworks submitted
@@ -48,19 +50,21 @@ Use whisper.cpp to create a "personal assistant" app.
 
 1. 2022-09-21: OpenAI releases Whisper
 
-    1. ASR (automatic speech recognition)
+    1. SOTA ASR (automatic speech recognition) supporting many languages
 
-    1. supports many languages
+    1. official announcement: <https://openai.com/index/whisper/>
+
+       github repo: <https://github.com/openai/whisper>
 
     1. last major open/non-commercial release from OpenAI
 
-    1. <https://openai.com/index/whisper/>
+        1. 2024-10-04: OpenAI releases Whisper-v3-turbo <https://github.com/openai/whisper/discussions/2363>
 
-    1. <https://github.com/openai/whisper>
+        1. much faster than previous whisper models
 
 1. Whisper.cpp is an open source alternative implementation
 
-    1. <https://github.com/ggerganov/whisper.cpp>
+    1. github: <https://github.com/ggerganov/whisper.cpp>
 
     1. implemented in c/c++ 
 
@@ -71,9 +75,11 @@ Use whisper.cpp to create a "personal assistant" app.
     1. by the same author as llama.cpp
         1. originally designed for Meta's Llama models
         1. now supports most LLMs
-        1. made by random "nobody" from Bulgaria who has become one of the most influential people in the LLM scene
+        1. made by "a nobody" from Bulgaria who has become one of the most influential people in the LLM scene
 
             for his story, see: <https://www.reddit.com/r/LocalLLaMA/comments/1cf6b4y/what_is_the_story_behind_ggeranov_llamacpp/>
+
+            <img src=img/ggeranov.png width=400px />
 
 1. llama.cpp is (I think) the first LLM library to support restricting output to a *context free grammar* (CFG)
 
