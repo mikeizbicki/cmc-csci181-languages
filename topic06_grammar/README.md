@@ -222,11 +222,25 @@ Use whisper.cpp to create a "personal assistant" app.
 
 1. LMQL's power is equivalent to context free languages: <https://lmql.ai/docs/language/constraints/custom-constraints.html#expressiveness-of-lmql-constraints>
 
-1. Example non-CFGs:
+1. Example non-context free languages:
 
-    1. $\{ww | w \text{~is a string}\}$
+    1. `{ww | w is a string}`
 
-    1. $\{a^n b^n c^n | a,b,c \text{~are symbols}\}$
+        For example: `abcdefgabcdefg`
+
+        but if you reverse, it is context free
+
+        `{ww^R | w is a string}`
+
+        For example: `abcdefggfedcba`
+
+    1. `{a^n b^n c^n | a,b,c are symbols}`
+
+        idea: if you have to "count" more than once, it's not context free
+
+    1. `set of prime numbers`
+
+        anything involving "complex computation" probably not context free
 
     1. python3
 
@@ -241,11 +255,10 @@ Use whisper.cpp to create a "personal assistant" app.
         - code: <https://docs.python.org/3/reference/grammar.html>
         - documentation: <https://docs.python.org/3/reference/lexical_analysis.html#other-tokens>
 
-        <!--
-        - python3 recently (2020) switched to a PEG grammar
-
+        - python3 recently (2020) switched to a PEG parser
+            - previously used LRLR(1)
+            - had lots of awkward limitations/workarounds
             - <https://peps.python.org/pep-0617/>
-        -->
 
 **Tasks:** TBA.
 
