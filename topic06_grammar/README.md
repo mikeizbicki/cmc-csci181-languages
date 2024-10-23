@@ -159,7 +159,73 @@ Use whisper.cpp to create a "personal assistant" app.
 
 1. See `example*.py`.
 
-Other details TBA.
+1. Example CFGs:
+
+    1. RASP <https://github.com/tech-srl/RASP/blob/main/RASP_support/RASP.g4>
+
+    1. json
+
+        - rfc: <https://datatracker.ietf.org/doc/html/rfc7159#section-2>
+
+        - lark: <https://lark-parser.readthedocs.io/en/latest/examples/json_parser.html#sphx-glr-examples-json-parser-py>
+
+    1. urls
+
+        - technically a regular language
+
+        - rfc written using a grammar: <https://datatracker.ietf.org/doc/html/rfc3986#section-3>
+
+    1. sqlite3
+
+        documentation uses "railroad diagrams" <https://www.sqlite.org/lang.html>
+
+        generated from the parser at <https://sqlite.org/src/file?name=src/parse.y&ci=trunk>
+
+        EBNF grammar at <https://github.com/AlecKazakova/sqlite-bnf/blob/master/sqlite.bnf>
+
+    <!--
+    1. YAML has no reference grammar <https://github.com/yaml/yaml-grammar>
+
+        YAML is notorious for lots of footguns
+
+        1. <https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell>
+        1. <https://noyaml.com/>
+
+        TOML is an alternative to YAML and does have a reference grammar <https://github.com/toml-lang/toml/blob/1.0.0/toml.abnf>
+    -->
+
+    <!--1. jsonSchema <https://cswr.github.io/JsonSchema/spec/grammar/> -->
+
+1. Example non-CFGs:
+
+    1. $\{ww | w \text{~is a string}\}$
+
+    1. $\{a^n b^n c^n | a,b,c \text{~are symbols}\}$
+
+    1. python3
+
+        - it's "almost" context free
+
+            whitespace/indentation for codeblocks is context sensitive
+
+            preprocessing is used to convert the whitespace into INDENT / DEDENT tokens
+
+            lark example at: <https://lark-parser.readthedocs.io/en/latest/examples/indented_tree.html>
+
+        - code: <https://docs.python.org/3/reference/grammar.html>
+        - documentation: <https://docs.python.org/3/reference/lexical_analysis.html#other-tokens>
+
+        <!--
+        - python3 recently (2020) switched to a PEG grammar
+
+            - <https://peps.python.org/pep-0617/>
+        -->
+
+
+
+**tasks:**
+
+1. TBA.
 
 <!--
 ## Part 0: What is Language?
@@ -194,32 +260,6 @@ Examples of constrained generation:
 1. LMQL: <https://lmql.ai/>
 
 1. Regular expressions: <https://github.com/r2d4/rellm>
-
-Example grammars:
-
-1. sqlite3 <https://www.sqlite.org/lang.html>
-
-1. python3
-
-    - in code: <https://docs.python.org/3/reference/grammar.html>
-    - documentation: <https://docs.python.org/3/reference/lexical_analysis.html#other-tokens>
-
-1. YAML has no reference grammar <https://github.com/yaml/yaml-grammar>
-
-    YAML is notorious for lots of footguns
-
-    1. <https://ruudvanasseldonk.com/2023/01/11/the-yaml-document-from-hell>
-    1. <https://noyaml.com/>
-
-    TOML is an alternative to YAML and does have a reference grammar <https://github.com/toml-lang/toml/blob/1.0.0/toml.abnf>
-
-1. RASP <https://github.com/tech-srl/RASP/blob/main/RASP_support/RASP.g4>
-
-1. url rfc <https://datatracker.ietf.org/doc/html/rfc3986#section-3>
-
-1. json rfc <https://datatracker.ietf.org/doc/html/rfc7159#section-2>
-
-1. jsonSchema <https://cswr.github.io/JsonSchema/spec/grammar/>
 -->
 
 <!--
