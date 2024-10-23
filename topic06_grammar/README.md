@@ -177,7 +177,12 @@ Use whisper.cpp to create a "personal assistant" app.
 
     1. Algorithms with better constant factors exist if you know you will only parse more restricted grammars.
 
-        LALR(1) is the most popular algorithm for programming languages as it guarantees $O(n)$ runtime.
+        They mostly have weird looking names like: LALR(1), LL(2), SLR.
+
+        They can guarantee $O(n)$ runtime,
+        and so widely used in programming languages.
+
+        Relatively hard to work with because they only parse some CFGs.
 
 1. Example CFGs:
 
@@ -220,6 +225,12 @@ Use whisper.cpp to create a "personal assistant" app.
 
     <!--1. jsonSchema <https://cswr.github.io/JsonSchema/spec/grammar/> -->
 
+    1. **Implication:**
+
+        1. Programming languages parse in $O(n)$ time
+        1. LLMs can compute (some) $O(n^2)$ algorithms
+        1. Very reasonable that LLMs can write grammatical code
+
 1. LMQL's power is equivalent to context free languages: <https://lmql.ai/docs/language/constraints/custom-constraints.html#expressiveness-of-lmql-constraints>
 
 1. Example non-context free languages:
@@ -256,7 +267,7 @@ Use whisper.cpp to create a "personal assistant" app.
         - documentation: <https://docs.python.org/3/reference/lexical_analysis.html#other-tokens>
 
         - python3 recently (2020) switched to a PEG parser
-            - previously used LRLR(1)
+            - previously used LL(1)
             - had lots of awkward limitations/workarounds
             - <https://peps.python.org/pep-0617/>
 
