@@ -159,6 +159,26 @@ Use whisper.cpp to create a "personal assistant" app.
 
 1. See `example*.py`.
 
+1. Parsing runtimes
+
+    | CFG type              | parsing runtime   |
+    | --------------------- | ----------------- |
+    | ambiguous grammar     | $O(n^3)$          |
+    | unambiguous grammar   | $O(n^2)$          |
+    | deterministic grammar | $O(n)$            |
+
+    $n$ is the length of the input string to be parsed.
+
+    Most programming languages use deterministic grammars.
+
+    Lark, by default, uses the Earley algorithm.
+
+    1. Achieves the runtimes above without you knowing which category your grammar falls into.
+
+    1. Algorithms with better constant factors exist if you know you will only parse more restricted grammars.
+
+        LALR(1) is the most popular algorithm for programming languages as it guarantees $O(n)$ runtime.
+
 1. Example CFGs:
 
     1. RASP <https://github.com/tech-srl/RASP/blob/main/RASP_support/RASP.g4>
@@ -173,13 +193,17 @@ Use whisper.cpp to create a "personal assistant" app.
 
         - technically a regular language
 
-        - rfc written using a grammar: <https://datatracker.ietf.org/doc/html/rfc3986#section-3>
+        - rfc grammar: <https://datatracker.ietf.org/doc/html/rfc3986#appendix-A>
+
+        - rfc regex: <https://datatracker.ietf.org/doc/html/rfc3986#appendix-B>
 
     1. sqlite3
 
         documentation uses "railroad diagrams" <https://www.sqlite.org/lang.html>
 
         generated from the parser at <https://sqlite.org/src/file?name=src/parse.y&ci=trunk>
+
+        it's more complicated than standard EBNF because it also encodes special preprocessing
 
         EBNF grammar at <https://github.com/AlecKazakova/sqlite-bnf/blob/master/sqlite.bnf>
 
@@ -195,6 +219,8 @@ Use whisper.cpp to create a "personal assistant" app.
     -->
 
     <!--1. jsonSchema <https://cswr.github.io/JsonSchema/spec/grammar/> -->
+
+1. LMQL's power is equivalent to context free languages: <https://lmql.ai/docs/language/constraints/custom-constraints.html#expressiveness-of-lmql-constraints>
 
 1. Example non-CFGs:
 
@@ -221,11 +247,7 @@ Use whisper.cpp to create a "personal assistant" app.
             - <https://peps.python.org/pep-0617/>
         -->
 
-
-
-**tasks:**
-
-1. TBA.
+**Tasks:** TBA.
 
 <!--
 ## Part 0: What is Language?
