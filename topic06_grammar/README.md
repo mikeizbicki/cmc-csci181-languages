@@ -274,12 +274,11 @@ Use whisper.cpp to create a "personal assistant" app.
 **Part 1: (Arithmetic)** (Due Sunday 3 Nov)
 
 The purpose of this assignment is to:
-1. practice writing grammars, and
+1. practice writing grammars,
 1. practice working with the resulting parse trees, and
-1. learn to write code that "translates" between different programming languages.
+1. write code that "translates" between different machine languages.
 
 All of these goals can be seen as simplifications of what is going on inside an LLM.
-
 The translation code is how traditional machine translations systems were written for human languages ~20 years ago.
 Today, "low resource languages" continue to use these same techniques.
 
