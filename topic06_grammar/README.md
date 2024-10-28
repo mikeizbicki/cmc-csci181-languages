@@ -271,7 +271,29 @@ Use whisper.cpp to create a "personal assistant" app.
             - had lots of awkward limitations/workarounds
             - <https://peps.python.org/pep-0617/>
 
-**Tasks:** TBA.
+**Part 1: (Arithmetic)** (Due Sunday 3 Nov)
+
+The purpose of this assignment is to:
+1. practice writing grammars, and
+1. practice working with the resulting parse trees, and
+1. learn to write code that "translates" between different programming languages.
+
+All of these goals can be seen as simplifications of what is going on inside an LLM.
+
+The translation code is how traditional machine translations systems were written for human languages ~20 years ago.
+Today, "low resource languages" continue to use these same techniques.
+
+Tasks:
+
+1. Create a new repository and clone the contents of <https://github.com/mikeizbicki/arithmetic> into the repo.
+    (Don't fork the repo.)
+
+1. Implement all of the FIXME annotations so that the test cases pass.
+
+1. Upload your fixed files to github, and submit the github url to sakai.
+
+**Part 2: TBA:** (Due Sunday 10 Nov)
+
 
 <!--
 ## Part 0: What is Language?

@@ -4,3 +4,6 @@
 [submodule "topic01_rag/ragnews"]
 	path = topic01_rag/ragnews
 	url = https://github.com/mikeizbicki/ragnews
+[submodule "topic06_grammar/arithmetic"]
+	path = topic06_grammar/arithmetic
+	url = https://github.com/mikeizbicki/arithmetic
