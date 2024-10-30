@@ -20,6 +20,54 @@
 
 1. 2-4 homeworks for this topic
 
+**Announcements (Wed 30 Oct):**
+
+1. All grades up to date.
+
+1. Friday office hours (1 Nov) cancelled - will be review for CSCI145
+
+1. Friday office hours next week (8 Nov) will have no students from CSCI145
+
+1. Deadline changed for homework until Sunday 10 Nov
+
+1. By next class, you should have your "rubric" created for your project.
+
+    You should:
+
+    1. Create a new github issue
+    1. In the issue, create a table with two columns
+        1. Column 1: the percent of your grade for the task
+        1. Column 2: the name/description of your task
+    1. You should be as detailed as possible.
+
+        This is your contract with me about how you will earn your grade, and the more detail you provide, the less room there is for a "bad surprise" in your grade.
+    1. I will reply with either accepting the rubric or suggest modifications.
+
+    If you feel there is a better method for submitting your rubric, let me know and we'll work something out.
+
+    The goal is this is all finalized by the end of next week.
+
+1. Classes for next semester:
+
+    1. I will be teaching CSCI143 - Big Data
+
+        1. required for DS major
+        1. counts for CS major / CS sequence / DS sequence
+        1. covers "how to build instagram"
+            1. parallel processing on remote servers
+            1. map reduce
+            1. shell scripting (POSIX/bash)
+            1. git
+            1. docker
+            1. postgres/sqlite SQL databases
+            1. query terabytes of data in milliseconds
+
+    1. Math Tea
+        1. October 31 at 3:30-4:30pm
+        1. Athenaeum courtyard
+        1. math faculty available to ask questions about courses
+        1. math club providing snacks
+
 **Learning Objectives:**
 
 1. How to constrain LLM output
@@ -271,7 +319,7 @@ Use whisper.cpp to create a "personal assistant" app.
             - had lots of awkward limitations/workarounds
             - <https://peps.python.org/pep-0617/>
 
-**Part 1: (Arithmetic)** (Due Sunday 3 Nov)
+**Part 1: (Arithmetic)** (Due Sunday ~~3 Nov~~ 10 Nov)
 
 The purpose of this assignment is to:
 1. practice writing grammars,
@@ -291,7 +339,36 @@ Tasks:
 
 1. Upload your fixed files to github, and submit the github url to sakai.
 
-**Part 2: TBA:** (Due Sunday 10 Nov)
+**Part 2: (esolang):** (Due Sunday 10 Nov)
+
+The purpose of this assignment is to:
+1. understand the difference in "power" between `Interpreter` and `Transformer`, and
+1. understand how a real programming language is implemented.
+
+Tasks:
+
+1. Create a new repository and clone the contents of <https://github.com/mikeizbicki/esolang> into the repo.
+    (Don't fork the repo.)
+
+1. There are no FIXME annotations.
+    Instead:
+
+    1. You must add support for `if` statements and `while` loops to the language.
+
+        > **NOTE:**
+        > The language currently has functions,
+        > but recursion cannot work without if statements because there is no base case.
+
+    1. You must "fix" the `for` implementation so that it accepts arbitrary expressions inside of `range()` instead of only a fixed constant.
+
+1. Demonstrate your new functionality by:
+
+    1. Creating examples in the README file.
+
+    1. Creating doctests that test the new functionality.
+
+1. Upload your modifications to github,
+    and upload the github url to sakai.
 
 
 <!--

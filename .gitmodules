@@ -7,3 +7,6 @@
 [submodule "topic06_grammar/arithmetic"]
 	path = topic06_grammar/arithmetic
 	url = https://github.com/mikeizbicki/arithmetic
+[submodule "topic06_grammar/esolang"]
+	path = topic06_grammar/esolang
+	url = https://github.com/mikeizbicki/esolang
