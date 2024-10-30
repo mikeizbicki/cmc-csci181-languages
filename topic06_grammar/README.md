@@ -41,6 +41,11 @@
     1. You should be as detailed as possible.
 
         This is your contract with me about how you will earn your grade, and the more detail you provide, the less room there is for a "bad surprise" in your grade.
+
+    1. Somehow your rubric should discus:
+        1. the details of your experimental component
+        1. the details of how you will share/publicize your project
+    1. Roughly 1-ish page printed is the right length
     1. I will reply with either accepting the rubric or suggest modifications.
 
     If you feel there is a better method for submitting your rubric, let me know and we'll work something out.
