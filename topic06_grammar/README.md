@@ -370,6 +370,8 @@ Tasks:
 
     1. Creating examples in the README file.
 
+        One of the examples should be showing how to compute the prime numbers.
+
     1. Creating doctests that test the new functionality.
 
 1. Upload your modifications to github,
