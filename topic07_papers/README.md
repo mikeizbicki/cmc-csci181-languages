@@ -28,15 +28,59 @@ On the Ability and Limitations of Transformers to Recognize Formal Languages
 
 <https://arxiv.org/abs/2009.11264>
 
-<!--
+## Future Topics
+
+**Fun math**
+
+Transformers Learn Shortcuts to Automata
+
+<https://arxiv.org/abs/2210.10749>
+
+*In context learning*
+
+What Can Transformers Learn In-Context? A Case Study of Simple Function Classes
+
+<https://proceedings.neurips.cc/paper_files/paper/2022/hash/c529dba08a146ea8d6cf715ae8930cbe-Abstract-Conference.html>
+
+In-Context Language Learning: Architectures and Algorithms
+
+<https://arxiv.org/abs/2401.12973>
+
+*Interpretability*
+
+Transformers are uninterpretable with myopic methods: a case study with bounded Dyck grammars
+
+<https://proceedings.neurips.cc/paper_files/paper/2023/hash/79ba1b827d3fc58e129d1cbfc8ff69f2-Abstract-Conference.html>
+
+*Chain of thought*
 
 Quiet-STaR: Language Models Can Teach Themselves to Think Before Speaking
 
 <https://arxiv.org/abs/2403.09629>
 
+**Cognitive science**
+
 Language is primarily a tool for communication rather than thought
 
 <https://www.nature.com/articles/s41586-024-07522-w>
+
+Humans context-free, monkeys finite-state? Apparently not.
+
+<http://itre.cis.upenn.edu/~myl/languagelog/archives/001399.html>
+
+Chimpanzees produce diverse vocal sequences with ordered and recombinatorial properties
+
+<https://pmc.ncbi.nlm.nih.gov/articles/PMC9110424/>
+
+Recursive sequence generation in crows
+
+<https://homepages.uni-tuebingen.de/andreas.nieder/Liao,%20Brecht,%20Johnston,%20Nieder%20(2022)%20SciAdv.pdf>
+
+Nonadjacent dependency processing in monkeys, apes, and humans
+
+<https://www.science.org/doi/pdf/10.1126/sciadv.abb0725>
+
+**Low Resource language learning**
 
 Hire a Linguist!: Learning Endangered Languages with In-Context Linguistic Descriptions
 
@@ -53,4 +97,3 @@ Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book
 Teaching Large Language Models an Unseen Language on the Fly
 
 <https://arxiv.org/abs/2402.19167>
--->
