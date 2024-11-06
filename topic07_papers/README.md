@@ -28,13 +28,15 @@ On the Ability and Limitations of Transformers to Recognize Formal Languages
 
 <https://arxiv.org/abs/2009.11264>
 
-## Future Topics
-
-**Fun math**
+**Mon 11 Nov**
 
 Transformers Learn Shortcuts to Automata
 
 <https://arxiv.org/abs/2210.10749>
+
+## Future Topics
+
+**Fun math**
 
 *In context learning*
 
