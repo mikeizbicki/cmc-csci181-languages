@@ -58,6 +58,10 @@ Quiet-STaR: Language Models Can Teach Themselves to Think Before Speaking
 
 <https://arxiv.org/abs/2403.09629>
 
+Faith and Fate: Limits of Transformers on Compositionality
+
+<https://proceedings.neurips.cc/paper_files/paper/2023/hash/deb3c28192f979302c157cb653c15e90-Abstract-Conference.html>
+
 **Cognitive science**
 
 Language is primarily a tool for communication rather than thought
