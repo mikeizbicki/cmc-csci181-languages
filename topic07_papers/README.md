@@ -62,6 +62,10 @@ Faith and Fate: Limits of Transformers on Compositionality
 
 <https://proceedings.neurips.cc/paper_files/paper/2023/hash/deb3c28192f979302c157cb653c15e90-Abstract-Conference.html>
 
+What Formal Languages Can Transformers Express? A Survey
+
+<https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00663/120983>
+
 **Cognitive science**
 
 Language is primarily a tool for communication rather than thought
