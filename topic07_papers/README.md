@@ -34,6 +34,14 @@ Transformers Learn Shortcuts to Automata
 
 <https://arxiv.org/abs/2210.10749>
 
+**Wed 13 Nov**
+
+Transformers are uninterpretable with myopic methods: a case study with bounded Dyck grammars
+
+<https://proceedings.neurips.cc/paper_files/paper/2023/hash/79ba1b827d3fc58e129d1cbfc8ff69f2-Abstract-Conference.html>
+
+- (Make sure to also look at the figures in appendix B)
+
 ## Future Topics
 
 **Fun math**
@@ -47,12 +55,6 @@ What Can Transformers Learn In-Context? A Case Study of Simple Function Classes
 In-Context Language Learning: Architectures and Algorithms
 
 <https://arxiv.org/abs/2401.12973>
-
-*Interpretability*
-
-Transformers are uninterpretable with myopic methods: a case study with bounded Dyck grammars
-
-<https://proceedings.neurips.cc/paper_files/paper/2023/hash/79ba1b827d3fc58e129d1cbfc8ff69f2-Abstract-Conference.html>
 
 *Chain of thought*
 
