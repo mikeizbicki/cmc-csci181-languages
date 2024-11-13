@@ -48,7 +48,7 @@ Transformers are uninterpretable with myopic methods: a case study with bounded 
 
 <http://itre.cis.upenn.edu/~myl/languagelog/archives/001399.html>
 
-Related papers:
+Related papers (useful to skim, but don't need to read in detail):
 
 1. Chimpanzees produce diverse vocal sequences with ordered and recombinatorial properties
 
