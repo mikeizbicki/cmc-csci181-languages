@@ -42,6 +42,34 @@ Transformers are uninterpretable with myopic methods: a case study with bounded 
 
 - (Make sure to also look at the figures in appendix B)
 
+**Mon 18 Nov**: overview of cogsci
+
+(*read all of this post*) Humans context-free, monkeys finite-state? Apparently not.
+
+<http://itre.cis.upenn.edu/~myl/languagelog/archives/001399.html>
+
+Related papers:
+
+1. Chimpanzees produce diverse vocal sequences with ordered and recombinatorial properties
+
+    <https://pmc.ncbi.nlm.nih.gov/articles/PMC9110424/>
+
+1. Recursive sequence generation in crows
+
+    <https://homepages.uni-tuebingen.de/andreas.nieder/Liao,%20Brecht,%20Johnston,%20Nieder%20(2022)%20SciAdv.pdf>
+
+1. Nonadjacent dependency processing in monkeys, apes, and humans
+
+    <https://www.science.org/doi/pdf/10.1126/sciadv.abb0725>
+
+(*skim this blog post*) On Chomsky and the Two Cultures of Statistical Learning
+
+<https://norvig.com/chomsky.html>
+
+(*read as much as you can, at least abstract+figure captions*) Language is primarily a tool for communication rather than thought
+
+<https://www.nature.com/articles/s41586-024-07522-w>
+
 ## Future Topics
 
 **Fun math**
@@ -69,28 +97,6 @@ Faith and Fate: Limits of Transformers on Compositionality
 What Formal Languages Can Transformers Express? A Survey
 
 <https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00663/120983>
-
-**Cognitive science**
-
-Language is primarily a tool for communication rather than thought
-
-<https://www.nature.com/articles/s41586-024-07522-w>
-
-Humans context-free, monkeys finite-state? Apparently not.
-
-<http://itre.cis.upenn.edu/~myl/languagelog/archives/001399.html>
-
-Chimpanzees produce diverse vocal sequences with ordered and recombinatorial properties
-
-<https://pmc.ncbi.nlm.nih.gov/articles/PMC9110424/>
-
-Recursive sequence generation in crows
-
-<https://homepages.uni-tuebingen.de/andreas.nieder/Liao,%20Brecht,%20Johnston,%20Nieder%20(2022)%20SciAdv.pdf>
-
-Nonadjacent dependency processing in monkeys, apes, and humans
-
-<https://www.science.org/doi/pdf/10.1126/sciadv.abb0725>
 
 **Low Resource language learning**
 
