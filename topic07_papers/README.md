@@ -79,7 +79,7 @@ then choose the last paper.*
 
 What Can Transformers Learn In-Context? A Case Study of Simple Function Classes
 
-<https://proceedings.neurips.cc/paper_files/paper/2022/hash/c529dba08a146ea8d6cf715ae8930cbe-Abstract-Conference.html>
+<https://arxiv.org/pdf/2208.01066>
 
 In-Context Language Learning: Architectures and Algorithms
 
