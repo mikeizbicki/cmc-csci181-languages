@@ -70,11 +70,7 @@ Related papers (useful to skim, but don't need to read in detail):
 
 <https://www.nature.com/articles/s41586-024-07522-w>
 
-## Future Topics
-
-**Fun math**
-
-*In context learning*
+**Wed 20 Nov** (in-context learning)
 
 What Can Transformers Learn In-Context? A Case Study of Simple Function Classes
 
@@ -83,6 +79,31 @@ What Can Transformers Learn In-Context? A Case Study of Simple Function Classes
 In-Context Language Learning: Architectures and Algorithms
 
 <https://arxiv.org/abs/2401.12973>
+
+**Mon 25 Nov** (learning human languages)
+
+*Each of these papers builds off of the previous, and they should be read in-order.
+You don't need to fully understand a paper before moving on to the next one.*
+
+A Benchmark for Learning to Translate a New Language from One Grammar Book
+
+<https://arxiv.org/abs/2309.16575>
+
+Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?
+
+<https://arxiv.org/abs/2409.19151>
+
+Teaching Large Language Models an Unseen Language on the Fly
+
+<https://arxiv.org/abs/2402.19167>
+
+Hire a Linguist!: Learning Endangered Languages with In-Context Linguistic Descriptions
+
+<https://arxiv.org/html/2402.18025v1>
+
+## Future Topics
+
+**Fun math**
 
 *Chain of thought*
 
@@ -98,20 +119,21 @@ What Formal Languages Can Transformers Express? A Survey
 
 <https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00663/120983>
 
-**Low Resource language learning**
+<!--
 
-Hire a Linguist!: Learning Endangered Languages with In-Context Linguistic Descriptions
+https://www.dwarkeshpatel.com/i/151435243/seeing-scaling-early
 
-<https://arxiv.org/html/2402.18025v1>
+https://x.com/CIA/status/1841468925378171381
 
-A Benchmark for Learning to Translate a New Language from One Grammar Book
+https://marginalrevolution.com/marginalrevolution/2024/08/the-wisdom-of-gwern-why-should-you-write.html
 
-<https://arxiv.org/abs/2309.16575>
+https://www.nytimes.com/2024/08/30/technology/ai-chatbot-chatgpt-manipulation.html
 
-Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?
+Gwern comments on China GPUs
 
-<https://arxiv.org/abs/2409.19151>
+https://www.reddit.com/r/mlscaling/comments/1gswayg/gwern_on_the_diminishing_returns_to_scaling_and/
 
-Teaching Large Language Models an Unseen Language on the Fly
+Chinese company trained GPT-4 rival with just 2,000 GPUs — 01.ai spent $3M compared to OpenAI's $80M to $100MNews
 
-<https://arxiv.org/abs/2402.19167>
+https://www.reddit.com/r/LocalLLaMA/comments/1gs0bxj/chinese_company_trained_gpt4_rival_with_just_2000/
+-->
