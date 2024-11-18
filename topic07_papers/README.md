@@ -72,6 +72,11 @@ Related papers (useful to skim, but don't need to read in detail):
 
 **Wed 20 Nov** (in-context learning)
 
+*The first paper below is a famous "background" paper for the next two papers, which cover material more closely related to grammar.
+You should try to read and understand all three in as much detail as you can,
+but if you can only pick one paper,
+then choose the last paper.*
+
 What Can Transformers Learn In-Context? A Case Study of Simple Function Classes
 
 <https://proceedings.neurips.cc/paper_files/paper/2022/hash/c529dba08a146ea8d6cf715ae8930cbe-Abstract-Conference.html>
@@ -79,6 +84,10 @@ What Can Transformers Learn In-Context? A Case Study of Simple Function Classes
 In-Context Language Learning: Architectures and Algorithms
 
 <https://arxiv.org/abs/2401.12973>
+
+In-context Learning Generalizes, But Not Always Robustly: The Case of Syntax
+
+<https://arxiv.org/abs/2311.07811v2>
 
 **Mon 25 Nov** (learning human languages)
 
