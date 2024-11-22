@@ -92,7 +92,8 @@ In-context Learning Generalizes, But Not Always Robustly: The Case of Syntax
 **Mon 25 Nov** (learning human languages)
 
 *Each of these papers builds off of the previous, and they should be read in-order.
-You don't need to fully understand a paper before moving on to the next one.*
+You don't need to fully understand a paper before moving on to the next one.
+We will focus our in class discussion on the first two papers.*
 
 A Benchmark for Learning to Translate a New Language from One Grammar Book
 
