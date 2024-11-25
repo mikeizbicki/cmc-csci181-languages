@@ -111,6 +111,35 @@ Hire a Linguist!: Learning Endangered Languages with In-Context Linguistic Descr
 
 <https://arxiv.org/html/2402.18025v1>
 
+**2 Dec 2024:** Future of LLMs from a business/foreign relations perspective
+
+Series of articles from former OpenAI employee about future of IA.
+*(Focus especially on IIIb/IIId, but also look through the other parts too.)*
+
+<https://situational-awareness.ai/>
+
+A Hacker Stole OpenAI Secrets, Raising Fears That China Could, Too
+
+<https://www.nytimes.com/2024/07/04/technology/openai-hack.html>
+
+AI's $600B Question
+
+<https://www.sequoiacap.com/article/ais-600b-question/>
+<https://news.ycombinator.com/item?id=40869461>
+
+Google "We have no moat, and neither does OpenAI"
+
+<https://semianalysis.com/2023/05/04/google-we-have-no-moat-and-neither/>
+<https://news.ycombinator.com/item?id=35813322>
+
+Nvidia’s AI chips are cheaper to rent in China than US
+
+<https://archive.is/AVkwa>
+
+Gwern on the diminishing returns to scaling and AI in China
+
+<https://www.reddit.com/r/mlscaling/comments/1gswayg/gwern_on_the_diminishing_returns_to_scaling_and/>
+
 ## Future Topics
 
 **Fun math**
