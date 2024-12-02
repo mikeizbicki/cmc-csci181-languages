@@ -142,9 +142,8 @@ Gwern on the diminishing returns to scaling and AI in China
 
 ## Future Topics
 
-**Fun math**
-
-*Chain of thought*
+*These would all be fun things for you to read on your own that extend the stuff we've talked about in class.
+But we won't talk about these papers in class.*
 
 Quiet-STaR: Language Models Can Teach Themselves to Think Before Speaking
 
